@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mappa Ristoranti Vegan</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='80' font-size='80'%3E%F0%9F%8C%B1%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <span class="logo">🌱</span>
+      <h1>Mappa Ristoranti</h1>
+    </div>
+    <nav class="tabs">
+      <button class="tab active" data-view="list">📋 Elenco</button>
+      <button class="tab" data-view="map">🗺️ Mappa</button>
+      <button class="tab" data-view="add">➕ Aggiungi</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- LIST VIEW -->
+    <section id="view-list" class="view active">
+      <div class="toolbar">
+        <input type="search" id="list-search" placeholder="🔎 Filtra per nome, città o tag…" />
+        <div class="tag-filters" id="tag-filters"></div>
+        <div class="counter" id="list-counter">Caricamento…</div>
+      </div>
+      <div id="restaurant-list" class="restaurant-list"></div>
+    </section>
+
+    <!-- MAP VIEW -->
+    <section id="view-map" class="view">
+      <div id="map"></div>
+    </section>
+
+    <!-- ADD VIEW -->
+    <section id="view-add" class="view">
+      <div class="add-panel">
+        <h2>Aggiungi un nuovo ristorante</h2>
+        <p class="hint">Cerca il nome del ristorante: i risultati arrivano direttamente da Google Maps. Clicca sul risultato giusto per confermarlo.</p>
+        <div class="search-box">
+          <input type="text" id="places-search" placeholder="Es. Soul Kitchen Milano" autocomplete="off" />
+          <button id="search-btn">Cerca</button>
+        </div>
+        <div id="places-results" class="places-results"></div>
+
+        <div id="confirm-panel" class="confirm-panel hidden">
+          <h3>Conferma e personalizza</h3>
+          <div id="confirm-summary"></div>
+          <label>Tag (separati da virgola)</label>
+          <input type="text" id="confirm-tags" placeholder="Vegan, Pizza, Per provare" />
+          <label>Nota personale (opzionale)</label>
+          <textarea id="confirm-note" rows="2" placeholder="Es. Pizza al tartufo eccellente!"></textarea>
+          <div class="btn-row">
+            <button id="confirm-save" class="primary">💾 Salva ristorante</button>
+            <button id="confirm-cancel">Annulla</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Detail modal -->
+  <div id="detail-modal" class="modal hidden">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close">×</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast"></div>
+
+  <!-- Firebase v10 modular SDK via CDN -->
+  <script type="module" src="config.js"></script>
+  <script type="module" src="app.js"></script>
+
+  <!-- Google Maps JS API: la chiave viene letta da config.js e iniettata dinamicamente -->
+  <script>
+    window.__loadGoogleMaps = function (apiKey) {
+      const s = document.createElement('script');
+      s.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places&loading=async&callback=__onGoogleMapsReady`;
+      s.async = true;
+      s.defer = true;
+      document.head.appendChild(s);
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,5726 @@
+[
+  {
+    "id": "fior-di-gusto-via-giuseppe-grazioli-8",
+    "name": "Fior Di Gusto",
+    "address": "Via Giuseppe Grazioli 8, 38122 Trento, Italia",
+    "lat": 46.0670332,
+    "lng": 11.1281929,
+    "icon": "icecream",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Gelato",
+        "color": "#753f80"
+      },
+      {
+        "name": "Dolci",
+        "color": "#803f54"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "checchi-brunch-specialty-coffee-via-corsica-225",
+    "name": "Checchi Brunch & Specialty Coffee",
+    "address": "Via Corsica 225, 25124 Brescia, Italia",
+    "lat": 45.5279131,
+    "lng": 10.2052756,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "korallo-pizza-e-drink-via-venezia",
+    "name": "Korallo - Pizza e Drink",
+    "address": "Via Venezia, 123, Trento TN 38122",
+    "lat": 46.0697578,
+    "lng": 11.1362595,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Pizza",
+        "color": "#3f805f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "patisseria-samba-mahdia-vicino-avenue-habib-bourguiba",
+    "name": "Patisseria Samba Mahdia",
+    "address": "Vicino Avenue Habib Bourguiba, Mahdia, Tunisia",
+    "lat": 35.5041238,
+    "lng": 11.0669663,
+    "icon": "pizza",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Dolci",
+        "color": "#803f54"
+      },
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "dar-amna-vicino-circuit-des-souks",
+    "name": "Dar Amna",
+    "address": "Vicino Circuit des Souks, Sousse, Tunisia",
+    "lat": 35.8245431,
+    "lng": 10.6361004,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "the-yuman-vicino-avenue-habib-bourguiba",
+    "name": "The Yuman",
+    "address": "Vicino Avenue Habib Bourguiba, Hammamet, Tunisia",
+    "lat": 36.3958142,
+    "lng": 10.6130877,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Pranzo",
+        "color": "#d42fce"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "la-cojina-vicino-rue-salambo",
+    "name": "La Cojina",
+    "address": "Vicino Rue Salambo, La Marsa, Tunisia",
+    "lat": 36.8842825,
+    "lng": 10.330859,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "ben-rahim-avenue-du-14-janvier-2011",
+    "name": "Ben Rahim",
+    "address": "Avenue du 14 Janvier 2011, Carthage, Tunisia",
+    "lat": 36.8698678,
+    "lng": 10.3441173,
+    "icon": "cafe",
+    "tags": [
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "nori-way-vicino-bosco-verticale",
+    "name": "Nori Way",
+    "address": "Vicino Bosco Verticale, Via Federico Confalonieri 6, 20124 Milano, Italia",
+    "lat": 45.4859996,
+    "lng": 9.1899221,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Sushi",
+        "color": "#80513f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "orto-con-cucina-brolo-milano-via-melzo-19",
+    "name": "Orto Con Cucina - Brolo Milano",
+    "address": "Via Melzo 19, 20129 Milano, Italia",
+    "lat": 45.4750947,
+    "lng": 9.207794699999999,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Pranzo",
+        "color": "#d42fce"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "gusto-arsizio-via-palestro-1b",
+    "name": "Gusto Arsizio",
+    "address": "Via Palestro 1B, 21052 Busto Arsizio VA, Italia",
+    "lat": 45.611843,
+    "lng": 8.844182,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "plant-shack-52-great-eastern-street",
+    "name": "Plant Shack",
+    "address": "52 Great Eastern Street, London, EC2A 3EP, England",
+    "lat": 51.524967193603516,
+    "lng": -0.08094040304422379,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pranzo",
+        "color": "#d42fce"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "franco-manca-15-winchester-walk",
+    "name": "Franco Manca",
+    "address": "15 Winchester Walk, London, SE1 9AG, England",
+    "lat": 51.5063592,
+    "lng": -0.09139019999999999,
+    "icon": "pizza",
+    "tags": [
+      {
+        "name": "Pizza",
+        "color": "#3f805f"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "mallow-borough-market-1-cathedral-street",
+    "name": "Mallow Borough Market",
+    "address": "1 Cathedral Street, London, SE1 9DE, England",
+    "lat": 51.5062513,
+    "lng": -0.0904033,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Pranzo",
+        "color": "#d42fce"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "pulia-36a-36b-stoney-street",
+    "name": "Pulia",
+    "address": "36a & 36b Stoney Street, London, SE1 9LB, England",
+    "lat": 51.5066423,
+    "lng": -0.0913775,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "hobson-s-fish-chips-13-villiers-street",
+    "name": "Hobson's Fish & Chips",
+    "address": "13 Villiers Street, London, WC2N 6ND, England",
+    "lat": 51.5083897,
+    "lng": -0.1242173,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "donutelier-vicino-430-strand",
+    "name": "Donutelier",
+    "address": "Vicino 430 Strand, Londra, WC2R 0QU, Regno Unito",
+    "lat": 51.5088368,
+    "lng": -0.1252602,
+    "icon": "donuts",
+    "tags": [
+      {
+        "name": "Dolci",
+        "color": "#803f54"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "the-breakfast-club-11-southwark-street",
+    "name": "The Breakfast Club",
+    "address": "11 Southwark Street, London, SE1 0TH, United Kingdom",
+    "lat": 51.5046066,
+    "lng": -0.09134629999999998,
+    "icon": "bakery",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "plants-of-roselyn-102-tooley-st",
+    "name": "Plants of Roselyn",
+    "address": "102 Tooley St, London Bridge, London, SE1 2TH, England",
+    "lat": 51.50431409999999,
+    "lng": -0.08260819999999999,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "the-after-school-cookie-club-borough-yards-1-stonecutters-lane",
+    "name": "The After School Cookie Club - Borough Yards",
+    "address": "1 Stonecutters Lane, London, SE1 9EQ, England",
+    "lat": 51.5065516,
+    "lng": -0.09229240000000001,
+    "icon": "donuts",
+    "tags": [
+      {
+        "name": "Dolci",
+        "color": "#803f54"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "vanilla-prelibata-gelateria-corso-magenta-3",
+    "name": "Vanilla Prelibata Gelateria",
+    "address": "Corso Magenta 3, 20025 Legnano MI, Italia",
+    "lat": 45.5942195,
+    "lng": 8.9183968,
+    "icon": "icecream",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Gelato",
+        "color": "#753f80"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "the-factory-castellanza-vicino-via-eugenio-cantoni",
+    "name": "The Factory Castellanza",
+    "address": "Vicino Via Eugenio Cantoni, 31, 21053 Castellanza VA, Italia",
+    "lat": 45.6101099,
+    "lng": 8.9020119,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "al-casbah-vicino-roots-bistro-cafe",
+    "name": "Al Casbah",
+    "address": "Vicino Roots Bistro Cafe, Kusini, Tanzania",
+    "lat": -6.2633171,
+    "lng": 39.5329965,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "bento-paje-food-court-paje",
+    "name": "Bento - Paje Food Court",
+    "address": "Paje, Tanzania",
+    "lat": -6.26979,
+    "lng": 39.5332,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "zatiny-batlai-vicino-boutique-matlai-zanzibar",
+    "name": "Zatiny Batlai",
+    "address": "Vicino Boutique Matlai Zanzibar, Kusini, Tanzania",
+    "lat": -6.14474,
+    "lng": 39.5162974,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "chapuchapu-vicino-chapu-chapu-r",
+    "name": "ChapuChapu",
+    "address": "Vicino Chapu Chapu R, Kusini, Tanzania",
+    "lat": -6.2651189,
+    "lng": 39.5330416,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "roots-bistro-cafe-paje",
+    "name": "Roots Bistro Cafe",
+    "address": "Paje, Tanzania",
+    "lat": -6.263268947601318,
+    "lng": 39.53288650512695,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "chamu-restaurant-vicino-zawady-villa-paje",
+    "name": "Chamu Restaurant",
+    "address": "Vicino Zawady Villa Paje, Kusini, Tanzania",
+    "lat": -6.2633505,
+    "lng": 39.5345902,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "corina-pastry-shop-vicino-roots-bistro-cafe",
+    "name": "Corina Pastry Shop",
+    "address": "Vicino Roots Bistro Cafe, Kusini, Tanzania",
+    "lat": -6.2632268,
+    "lng": 39.5328391,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "mr-kahawa-paje",
+    "name": "Mr. Kahawa",
+    "address": "Paje, Tanzania",
+    "lat": -6.269334499999999,
+    "lng": 39.53635300000001,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "giard-via-napo-torriani",
+    "name": "Giardì",
+    "address": "Via Napo Torriani, 3, 20124 Milano MI, Italia",
+    "lat": 45.4805594,
+    "lng": 9.2035192,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "pass-ristorante-e-pizzeria-vicino-giardino-g-b-garzetti",
+    "name": "Passù Ristorante e Pizzeria",
+    "address": "Vicino Giardino G. B. Garzetti, 4, 38122 Trento TN, Italia",
+    "lat": 46.0656344,
+    "lng": 11.1245794,
+    "icon": "pizza",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Pizza",
+        "color": "#3f805f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "pasticceria-tre-rose-via-nas-3",
+    "name": "Pasticceria Tre Rose",
+    "address": "Via Nas 3, 38062 Arco TN, Italia",
+    "lat": 45.91742,
+    "lng": 10.88112,
+    "icon": "bakery",
+    "tags": [
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Dolci",
+        "color": "#803f54"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "para-todos-tn-via-del-suffragio",
+    "name": "Para Todos TN",
+    "address": "Via del Suffragio, 86 38122 Trento Italy",
+    "lat": 46.07089614868164,
+    "lng": 11.12463092803955,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pranzo",
+        "color": "#d42fce"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "vegan-home-restaurant-da-katia-luca-vicino-via-torre",
+    "name": "Vegan Home\nRestaurant da Katia & Luca",
+    "address": "Vicino Via Torre, 9, 38074 Dro TN, Italia",
+    "lat": 45.962164,
+    "lng": 10.9115237,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "il-pirata-della-piada-via-piave-9",
+    "name": "Il Pirata Della Piada",
+    "address": "Via Piave 9, 20088 Rosate MI, Italia",
+    "lat": 45.35490417480469,
+    "lng": 9.021486282348633,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "zampo-quasi-napoletana-corso-cavour",
+    "name": "Zampo Quasi Napoletana",
+    "address": "Corso Cavour, 21, Mede",
+    "lat": 45.09646,
+    "lng": 8.73763,
+    "icon": "pizza",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Pizza",
+        "color": "#3f805f"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "da-marghe-vicino-rua-1-de-junho",
+    "name": "Da Marghe",
+    "address": "Vicino Rua 1 de Junho, Santa Maria, Capo Verde",
+    "lat": 16.5987601,
+    "lng": -22.9064505,
+    "icon": "pizza",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Pizza",
+        "color": "#3f805f"
+      },
+      {
+        "name": "Piadina",
+        "color": "#80404e"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "pizzeria-da-nando-vicino-rua-da-pousada",
+    "name": "Pizzeria da Nando",
+    "address": "Vicino Rua da Pousada, Santa Maria, Capo Verde",
+    "lat": 16.6005471,
+    "lng": -22.9066361,
+    "icon": "pizza",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Pizza",
+        "color": "#3f805f"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "hot-spot-vicino-travessa-da-independ-ncia",
+    "name": "Hot Spot",
+    "address": "Vicino Travessa da Independência, Santa Maria, Capo Verde",
+    "lat": 16.5989155,
+    "lng": -22.9049858,
+    "icon": "takeout",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "nha-gost-santa-maria",
+    "name": "Nha Gost",
+    "address": "Santa Maria, Cap-Vert",
+    "lat": 16.5989,
+    "lng": -22.904978,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "meky-s-burger-bar-rua-1-de-junho-door-32",
+    "name": "Meky's Burger Bar",
+    "address": "Rua 1 de Junho - Door 32, Santa Maria, Cabo Verde",
+    "lat": 16.5985672,
+    "lng": -22.9055581,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Burger",
+        "color": "#3f6080"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "black-sheep-via-renato-lunelli",
+    "name": "Black Sheep",
+    "address": "Via Renato Lunelli, 18, 38121 Trento TN, Italia",
+    "lat": 46.0683574,
+    "lng": 11.1212305,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pranzo",
+        "color": "#d42fce"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "mat-bakery-strada-i-androna-di-borgonuovo-12",
+    "name": "MaTì Bakery",
+    "address": "Strada I Androna di Borgonuovo 12, 38122 Trento, Italia",
+    "lat": 46.06578826904297,
+    "lng": 11.123438835144043,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "be-free-via-gabriele-d-annunzio-89",
+    "name": "Be Free",
+    "address": "Via Gabriele D'Annunzio 89, 07026 Olbia SS, Italia",
+    "lat": 40.92467,
+    "lng": 9.49697,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "wind-bar-porto-pollo-vicino-localit-l-isuledda",
+    "name": "Wind Bar Porto Pollo",
+    "address": "Vicino Località l'Isuledda, 07020 Palau SS, Italia",
+    "lat": 41.1938557,
+    "lng": 9.318661,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "hostaria-cuppulata-vicolo-la-maddalena",
+    "name": "Hostaria CuPPulata",
+    "address": "Vicolo la Maddalena, 4, 07020 Palau OT, Italia",
+    "lat": 41.181182,
+    "lng": 9.382334000000002,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "la-piada-che-merita-via-flaminia-conca-68",
+    "name": "La Piada Che Merita",
+    "address": "Via Flaminia Conca 68, 47923 Rimini, Italia",
+    "lat": 44.04390335083008,
+    "lng": 12.575957298278809,
+    "icon": "pizza",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Piadina",
+        "color": "#80404e"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "agrofficina-piazza-malatesta-21g",
+    "name": "Agrofficina",
+    "address": "Piazza Malatesta 21G, 47923 Rimini, Italia",
+    "lat": 44.0590987,
+    "lng": 12.5640341,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "ciacco-lab-piazza-della-steccata-1a",
+    "name": "Ciacco Lab",
+    "address": "Piazza della Steccata 1A, 43121 Parma, Italia",
+    "lat": 44.802127838134766,
+    "lng": 10.327733039855957,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Gelato",
+        "color": "#753f80"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "apriti-sesamo-piazza-rastelli-5-a",
+    "name": "Apriti Sesamo",
+    "address": "Piazza Rastelli 5/A, 43122 Parma PR, Italia",
+    "lat": 44.8109466,
+    "lng": 10.3325692,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "bambloo-via-giacomo-matteotti-3",
+    "name": "Bambloo",
+    "address": "Via Giacomo Matteotti 3, Int. n, 38069 Nago-Torbole TN, Italia",
+    "lat": 45.86968994140625,
+    "lng": 10.87576961517334,
+    "icon": "icecream",
+    "tags": [
+      {
+        "name": "Gelato",
+        "color": "#753f80"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "gelateria-cherry-via-roma-24",
+    "name": "Gelateria Cherry",
+    "address": "Via Roma 24, 38068 Rovereto TN, Italia",
+    "lat": 45.88949,
+    "lng": 11.04328,
+    "icon": "icecream",
+    "tags": [
+      {
+        "name": "Gelato",
+        "color": "#753f80"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "piadinamore-vicino-via-mercerie",
+    "name": "Piadinamore",
+    "address": "Vicino Via Mercerie, 17, 38068 Rovereto TN, Italia",
+    "lat": 45.889065,
+    "lng": 11.043947,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "pizzeria-081-via-salvador-allende-2",
+    "name": "Pizzeria 081",
+    "address": "Via Salvador Allende 2, 29015 Castel San Giovanni PC, Italia",
+    "lat": 45.06062698364258,
+    "lng": 9.438736915588379,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pizza",
+        "color": "#3f805f"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "osteria-di-fuori-porta-via-tiziano-aspetti-7",
+    "name": "Osteria di Fuori Porta",
+    "address": "Via Tiziano Aspetti 7, 35132 Padova, Italia",
+    "lat": 45.4206987,
+    "lng": 11.8801113,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "l-oca-golosa-corso-italia-201",
+    "name": "L’Oca Golosa",
+    "address": "Corso Italia 201, 34170 Gorizia, Italia",
+    "lat": 45.936127,
+    "lng": 13.610205,
+    "icon": "bakery",
+    "tags": [
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "gelato-marco-via-malcanton-16",
+    "name": "Gelato Marco",
+    "address": "Via Malcanton 16, 34121 Trieste, Italia",
+    "lat": 45.6489287,
+    "lng": 13.7697384,
+    "icon": "icecream",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Gelato",
+        "color": "#753f80"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "hops-beerstr-via-di-cavana-15a",
+    "name": "Hops Beerstrò",
+    "address": "Via di Cavana 15A, 34124 Trieste, Italia",
+    "lat": 45.6474972,
+    "lng": 13.7657421,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "rifugio-mario-premuda-bagnoli-superiore-245",
+    "name": "Rifugio Mario Premuda",
+    "address": "Bagnoli Superiore 245, 34018 San Dorligo della Valle Provincia di Trieste, Italia",
+    "lat": 45.619119,
+    "lng": 13.865834,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "il-pane-quotidiano-strada-della-rosandra-strada-della-rosandra-50",
+    "name": "Il Pane Quotidiano - Strada della Rosandra",
+    "address": "Strada della Rosandra 50, 34147 Trieste, Italia",
+    "lat": 45.6145009,
+    "lng": 13.8232898,
+    "icon": "bakery",
+    "tags": [
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "all-osteria-di-casa-pepe-via-aurelio-e-fabio-nordio-12",
+    "name": "All’Osteria Di Casa Pepe",
+    "address": "Via Aurelio e Fabio Nordio 12, 34125 Trieste, Italia",
+    "lat": 45.65093231201172,
+    "lng": 13.779773712158203,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "il-melograno-via-di-cavana-14",
+    "name": "Il Melograno",
+    "address": "Via di Cavana 14, 34124 Trieste, Italia",
+    "lat": 45.647430419921875,
+    "lng": 13.765987396240234,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pranzo",
+        "color": "#d42fce"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "dimatteo-gelateria-petkov-kovo-nabre-je-27a",
+    "name": "DIMATTEO Gelateria",
+    "address": "Petkovškovo nabrežje 27A, 1000 Ljubljana, Slovenija",
+    "lat": 46.05211,
+    "lng": 14.50913,
+    "icon": "icecream",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Gelato",
+        "color": "#753f80"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "verace-streli-ka-ulica-22",
+    "name": "Verace",
+    "address": "Streliška ulica 22, 1000 Ljubljana, Slovenia",
+    "lat": 46.0521198,
+    "lng": 14.5091866,
+    "icon": "pizza",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Pizza",
+        "color": "#3f805f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "brot-pekarna-poljanska-cesta-11",
+    "name": "Brot Pekarna",
+    "address": "Poljanska cesta 11, 1000 Ljubljana, Slovenija",
+    "lat": 46.05063247680664,
+    "lng": 14.512787818908691,
+    "icon": "pizza",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Pizza",
+        "color": "#3f805f"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "barbarella-juicebar-slovenska-cesta-38",
+    "name": "Barbarella Juicebar",
+    "address": "Slovenska cesta 38, 1000 Ljubljana, Slovenija",
+    "lat": 46.05314810000001,
+    "lng": 14.5040497,
+    "icon": "cafe",
+    "tags": [
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "gaudi-naan-trubarjeva-cesta-7",
+    "name": "Gaudi & Naan",
+    "address": "Trubarjeva cesta 7, 1000 Ljubljana, Slovenija",
+    "lat": 46.051998138427734,
+    "lng": 14.507257461547852,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "public-vegan-kitchen-bled-ljubljanska-cesta-4",
+    "name": "Public & Vegan Kitchen Bled",
+    "address": "Ljubljanska cesta 4, 4260 Bled, Slovenija",
+    "lat": 46.36661410000001,
+    "lng": 14.1095345,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Pranzo",
+        "color": "#d42fce"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "kavarna-midva-vicino-grajska-cesta-1",
+    "name": "Kavarna midva",
+    "address": "Vicino Grajska cesta 1, 4260 Bled, Slovenia",
+    "lat": 46.3714608,
+    "lng": 14.1061234,
+    "icon": "bakery",
+    "tags": [
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "131-caff-e-dintorni-vicino-via-del-cotonificio",
+    "name": "131 Caffè e Dintorni",
+    "address": "Vicino Via del Cotonificio, 131, 33100 Udine UD, Italia",
+    "lat": 46.0807599,
+    "lng": 13.2184642,
+    "icon": "bakery",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Caffè",
+        "color": "#353631"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "integraldo-vicino-via-carnia",
+    "name": "Integraldo",
+    "address": "Vicino Via Carnia, 202, 33030 Majano UD, Italia",
+    "lat": 46.1892286,
+    "lng": 13.0562837,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Pizza",
+        "color": "#3f805f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "caff-longobardo-piazza-paolo-diacono-6",
+    "name": "Caffè Longobardo",
+    "address": "Piazza Paolo Diacono 6, 33043 Cividale del Friuli UD, Italia",
+    "lat": 46.09455860000001,
+    "lng": 13.4304026,
+    "icon": "nightclub",
+    "tags": [
+      {
+        "name": "Caffè",
+        "color": "#353631"
+      },
+      {
+        "name": "Dolci",
+        "color": "#803f54"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "gran-caff-friuli-via-aquileia-111",
+    "name": "Gran Caffè Friuli",
+    "address": "Via Aquileia 111, 33100 Udine, Italia",
+    "lat": 46.0580206,
+    "lng": 13.2443444,
+    "icon": "cafe",
+    "tags": [
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "mille-e-una-notte-via-gemona-14",
+    "name": "Mille e una Notte",
+    "address": "Via Gemona 14, 33100 Udine, Italia",
+    "lat": 46.066403,
+    "lng": 13.2333211,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "ristorante-parco-gambrinus-via-capitello-rai-18",
+    "name": "Ristorante Parco Gambrinus",
+    "address": "Via Capitello Rai 18, 31020 San Polo di Piave TV, Italia",
+    "lat": 45.796793,
+    "lng": 12.3888602,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Osteria",
+        "color": "#bc7933"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "wind2-bar-gelateria-viale-arciprete-francesco-santoni-18",
+    "name": "Wind2 Bar Gelateria",
+    "address": "Viale Arciprete Francesco Santoni 18, 38062 Arco TN, Italia",
+    "lat": 45.92088,
+    "lng": 10.89114,
+    "icon": "icecream",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Gelato",
+        "color": "#753f80"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "tinka-bar-bistrot-vicino-via-strada-piccola",
+    "name": "Tinka Bar & Bistrot",
+    "address": "Vicino Via Strada Piccola, 4, 38069 Nago-Torbole TN, Italia",
+    "lat": 45.871236,
+    "lng": 10.8757062,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "officina-verde-cucina-vegetale-san-giacomo-6",
+    "name": "Officina Verde - Cucina Vegetale",
+    "address": "San Giacomo 6, 38066 Riva del Garda TN, Italia",
+    "lat": 45.8946893,
+    "lng": 10.8361858,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "pizzikotto-via-privata-celio-2",
+    "name": "Pizzikotto",
+    "address": "Via Privata Celio 2, 20148 Milano, Italia",
+    "lat": 45.46826600000001,
+    "lng": 9.1303399,
+    "icon": "pizza",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Pizza",
+        "color": "#3f805f"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "sushiko-via-padova-5",
+    "name": "Sushiko",
+    "address": "Via Padova 5, 38066 Riva del Garda TN, Italia",
+    "lat": 45.8826308,
+    "lng": 10.8538884,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Giapponese",
+        "color": "#6a803f"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "bio-essere-via-santa-caterina-49",
+    "name": "Bio Essere",
+    "address": "Via Santa Caterina 49, 38062 Arco TN, Italia",
+    "lat": 45.9135166,
+    "lng": 10.875917,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "go-pizza-viale-giosu-carducci-8",
+    "name": "Go Pizza",
+    "address": "Viale Giosuè Carducci 8, 38066 Riva del Garda TN, Italia",
+    "lat": 45.88542938232422,
+    "lng": 10.84676742553711,
+    "icon": "pizza",
+    "tags": [
+      {
+        "name": "Pizza",
+        "color": "#3f805f"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "porca-vacca-localit-filanda",
+    "name": "Porca Vacca",
+    "address": "Località Filanda, 9, 38074 Dro TN, Italia",
+    "lat": 45.959446,
+    "lng": 10.913879,
+    "icon": "pizza",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Pizza",
+        "color": "#3f805f"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "soul-kitchen-vicino-via-di-fossatello",
+    "name": "Soul Kitchen",
+    "address": "Vicino Via di Fossatello, 10, 16124 Genova GE, Italia",
+    "lat": 44.4113739,
+    "lng": 8.9297393,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Pranzo",
+        "color": "#d42fce"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "bar-pasticceria-maroni-delle-fatine-dei-dolci-bar-pasticceria-maroni-via-santa-m",
+    "name": "Bar Pasticceria Maroni delle Fatine dei Dolci (Bar Pasticceria Maroni)",
+    "address": "Via Santa Maria, 2, 38066 Riva del Garda TN, Italia",
+    "lat": 45.8858066,
+    "lng": 10.8417539,
+    "icon": "cafe",
+    "tags": [
+      {
+        "name": "Caffè",
+        "color": "#353631"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "gelateria-al-pozzo-via-fiume-59",
+    "name": "Gelateria al Pozzo",
+    "address": "Via Fiume 59, 38066 Riva del Garda TN, Italia",
+    "lat": 45.8860915,
+    "lng": 10.8395806,
+    "icon": "icecream",
+    "tags": [
+      {
+        "name": "Gelato",
+        "color": "#753f80"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "giropizza-vip-via-dei-zeloni-2",
+    "name": "Giropizza vip",
+    "address": "Via dei Zeloni 2, 38057 Pergine Valsugana TN, Italia",
+    "lat": 46.0320182,
+    "lng": 11.2296152,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Pizza",
+        "color": "#3f805f"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "vegamore-via-crema-12",
+    "name": "Vegamore",
+    "address": "Via Crema 12, 20135 Milano, Italia",
+    "lat": 45.4497006,
+    "lng": 9.2024419,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "artico-gelateria-via-luigi-porro-lambertenghi-15",
+    "name": "Artico Gelateria",
+    "address": "Via Luigi Porro Lambertenghi 15, 20159 Milano, Italia",
+    "lat": 45.4892525,
+    "lng": 9.1867155,
+    "icon": "icecream",
+    "tags": [
+      {
+        "name": "Gelato",
+        "color": "#753f80"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "fra-diavolo-milano-isola-via-genova-thaon-di-revel-10",
+    "name": "Fra Diavolo - Milano Isola",
+    "address": "Via Genova Thaon di Revel 10, 20159 Milano, Italia",
+    "lat": 45.4920989,
+    "lng": 9.1889002,
+    "icon": "pizza",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Pizza",
+        "color": "#3f805f"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "ciacco-via-spadari-13",
+    "name": "Ciacco",
+    "address": "Via Spadari 13, 20123 Milano, Italia",
+    "lat": 45.4636618,
+    "lng": 9.1867691,
+    "icon": "icecream",
+    "tags": [
+      {
+        "name": "Gelato",
+        "color": "#753f80"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "rosebymary-via-cesare-battisti",
+    "name": "Rosebymary",
+    "address": "Via Cesare Battisti, 1, 20122 Milano MI, Italia",
+    "lat": 45.4632918,
+    "lng": 9.199329,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Dolci",
+        "color": "#803f54"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "marini-corso-camillo-benso-cavour-18",
+    "name": "Marini'",
+    "address": "Corso Camillo Benso Cavour 18, 27100 Pavia, Italia",
+    "lat": 45.18595504760742,
+    "lng": 9.152242660522461,
+    "icon": "icecream",
+    "tags": [
+      {
+        "name": "Gelato",
+        "color": "#753f80"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "botanica-lab-cucina-via-battibecco-4",
+    "name": "Botanica Lab Cucina",
+    "address": "Via Battibecco 4, 40123 Bologna, Italia",
+    "lat": 44.493479,
+    "lng": 11.341198,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pranzo",
+        "color": "#d42fce"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "zupperia-le-puelle-via-san-giovanni-battista-3",
+    "name": "Zupperia Le Puelle",
+    "address": "Via San Giovanni Battista 3, 06034 Foligno PG, Italia",
+    "lat": 42.9592566,
+    "lng": 12.7038885,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "taverna-dello-spagna-via-di-fontesecca-7",
+    "name": "Taverna dello Spagna",
+    "address": "Via di Fontesecca 7, 06049 Spoleto PG, Italia",
+    "lat": 42.73507000000001,
+    "lng": 12.737192,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Pranzo",
+        "color": "#d42fce"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "drip-specialty-coffee-corso-camillo-benso-conte-di-cavour",
+    "name": "Drip Specialty Coffee",
+    "address": "Corso Camillo Benso Conte di Cavour, 84, 06034 Foligno PG, Italia",
+    "lat": 42.95393753051758,
+    "lng": 12.705924987792969,
+    "icon": "cafe",
+    "tags": [
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "lick-corso-cavour",
+    "name": "Lick",
+    "address": "Corso Cavour, 5, 06121 Perugia PG, Italia",
+    "lat": 43.10825010000001,
+    "lng": 12.3898087,
+    "icon": "icecream",
+    "tags": [
+      {
+        "name": "Gelato",
+        "color": "#753f80"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "maramao-pane-e-vin-via-dei-priori-65",
+    "name": "Maramao Pane e Vin",
+    "address": "Via dei Priori 65, 06123 Perugia, Italia",
+    "lat": 43.11224110000001,
+    "lng": 12.3862681,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "la-bottega-del-vino-vicino-via-del-teatro",
+    "name": "La bottega del vino",
+    "address": "Vicino Via del Teatro, 10, 53045 Montepulciano SI, Italia",
+    "lat": 43.0916394,
+    "lng": 11.7812994,
+    "icon": "wine",
+    "tags": [
+      {
+        "name": "Aperitivo",
+        "color": "#568040"
+      },
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "bottega-vegana-via-coltellini-19",
+    "name": "Bottega Vegana",
+    "address": "Via Coltellini 19, Int. 21, 41121 Modena, Italia",
+    "lat": 44.6474643,
+    "lng": 10.9273185,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "karibu-vicino-aramex",
+    "name": "Karibu",
+    "address": "Vicino Aramex, Hurghada, El Bahr El Ahmar, Egitto",
+    "lat": 27.3960109,
+    "lng": 33.6738509,
+    "icon": "fastfood",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Burger",
+        "color": "#3f6080"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "savana-ristorante-eritreo-via-luigi-canonica-45",
+    "name": "Savana Ristorante Eritreo",
+    "address": "Via Luigi Canonica 45, 20154 Milano, Italia",
+    "lat": 45.479037,
+    "lng": 9.173732,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "ristorante-la-fontana-via-centrale-7",
+    "name": "Ristorante La Fontana",
+    "address": "Via Centrale 7, 22021 Bellagio CO, Italia",
+    "lat": 45.9878595,
+    "lng": 9.2612476,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pranzo",
+        "color": "#d42fce"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "zaz-ramen-sake-bar-restaurant-via-solferino-48",
+    "name": "Zazà Ramen sake bar & restaurant",
+    "address": "Via Solferino 48, 20121 Milano, Italia",
+    "lat": 45.47896129999999,
+    "lng": 9.1886778,
+    "icon": "soup",
+    "tags": [
+      {
+        "name": "Ramen",
+        "color": "#80773f"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "bistro-del-puerto-vicino-gasolinera-mar-m-rubic",
+    "name": "Bistro del Puerto",
+    "address": "Vicino Gasolinera Mar M.Rubic, Calle El Berrugo, 35580 Yaiza (Las Palmas), Spagna",
+    "lat": 28.8582084,
+    "lng": -13.813579,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Vista mare",
+        "color": "#5fa3d0"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "alma-brunch-vicino-avenida-nuestra-se-ora-del-carmen",
+    "name": "Alma Brunch",
+    "address": "Vicino Avenida Nuestra Señora del Carmen, 5, 35660 La Oliva (Las Palmas), Spagna",
+    "lat": 28.736798,
+    "lng": -13.8685628,
+    "icon": "bakery",
+    "tags": [
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "la-casa-de-las-paellas-casa-margarita-restaurante-avenida-primero-de-mayo",
+    "name": "La Casa de las Paellas - Casa Margarita Restaurante",
+    "address": "Avenida Primero de Mayo, 23, 35649 La Oliva, Las Palmas, España",
+    "lat": 28.60345458984375,
+    "lng": -13.83826732635498,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "alberta-la-magia-della-pasta-vicino-calle-mafasca",
+    "name": "Alberta - La magia della pasta",
+    "address": "Vicino Calle Mafasca, 23, 35650 La Oliva (Las Palmas), Spagna",
+    "lat": 28.6785417,
+    "lng": -13.9372274,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "secreto-energy-vicino-calle-guirre",
+    "name": "Secreto Energy",
+    "address": "Vicino Calle Guirre, 35660 La Oliva (Las Palmas), Spagna",
+    "lat": 28.7228434,
+    "lng": -13.8684515,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "vrebac-icecream-avenida-ntra-sra-del-carmen",
+    "name": "Vrebac IceCream",
+    "address": "Avenida Ntra Sra del Carmen, 16, 35660 Corralejo, Las Palmas, España",
+    "lat": 28.73805,
+    "lng": -13.86835,
+    "icon": "icecream",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Gelato",
+        "color": "#753f80"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "la-arroceria-vicino-calle-pej-n",
+    "name": "La Arroceria",
+    "address": "Vicino Calle Pejín, 6, 35660 La Oliva (Las Palmas), Spagna",
+    "lat": 28.7411138,
+    "lng": -13.8700379,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "neverland-stradella-via-pietro-bianchi-2",
+    "name": "Neverland Stradella",
+    "address": "Via Pietro Bianchi 2, 27049 Stradella PV, Italia",
+    "lat": 45.07527,
+    "lng": 9.30932,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "greenwood-bistrot-vicino-viale-industria",
+    "name": "Greenwood bistrot",
+    "address": "Vicino Viale Industria, 27029 Vigevano PV, Italia",
+    "lat": 45.3080283,
+    "lng": 8.8776243,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "la-locanda-di-lo-piazza-s-caterina",
+    "name": "La Locanda di Lo",
+    "address": "Piazza S. Caterina, 13, 17024 Finale Ligure SV, Italie",
+    "lat": 44.1759177,
+    "lng": 8.326771899999999,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "in-unzaja-vegan-restaurant-via-untoria-36-r",
+    "name": "In Unzaja - Vegan Restaurant",
+    "address": "Via Untoria 36 R, 17100 Savona, Italia",
+    "lat": 44.30592,
+    "lng": 8.48275,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "gelateria-k2-piazza-buranello-3",
+    "name": "Gelateria K2",
+    "address": "Piazza Buranello 3, 17019 Varazze SV, Italia",
+    "lat": 44.3587911,
+    "lng": 8.5740826,
+    "icon": "icecream",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Gelato",
+        "color": "#753f80"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "pizza-leggera-via-alessandro-brambilla-70",
+    "name": "Pizza Leggera",
+    "address": "Via Alessandro Brambilla 70, 27100 Pavia, Italia",
+    "lat": 45.2022914,
+    "lng": 9.149550699999999,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pizza",
+        "color": "#3f805f"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "gelateria-la-romana-corso-camillo-benso-cavour-57",
+    "name": "Gelateria La Romana",
+    "address": "Corso Camillo Benso Cavour 57, 27100 Pavia, Italia",
+    "lat": 45.1871131,
+    "lng": 9.1480553,
+    "icon": "icecream",
+    "tags": [
+      {
+        "name": "Gelato",
+        "color": "#753f80"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "bellimpasto-corso-camillo-benso-cavour-40",
+    "name": "Bellimpasto",
+    "address": "Corso Camillo Benso Cavour 40, 27100 Pavia, Italia",
+    "lat": 45.186763763427734,
+    "lng": 9.148564338684082,
+    "icon": "pizza",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Pizza",
+        "color": "#3f805f"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "heaven-s-kitchen-theodor-heuss-stra-e-26",
+    "name": "Heaven's Kitchen",
+    "address": "Theodor-Heuss-Straße 26, 70174 Stuttgart, Deutschland",
+    "lat": 48.776214599609375,
+    "lng": 9.172354698181152,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "cafe-katzentempel-n-rnberg-peter-vischer-stra-e-21",
+    "name": "Cafe Katzentempel Nürnberg",
+    "address": "Peter-Vischer-Straße 21, 90403 Nürnberg, Germany",
+    "lat": 49.4511181,
+    "lng": 11.0811069,
+    "icon": "cafe",
+    "tags": [
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "kokono-restaurant-n-rnberg-luitpoldstra-e-7",
+    "name": "KOKONO Restaurant Nürnberg",
+    "address": "Luitpoldstraße 7, 90402 Nürnberg, Deutschland",
+    "lat": 49.4480793,
+    "lng": 11.0795829,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "kartoffelstube-ansbacher-stra-e-7",
+    "name": "Kartoffelstube",
+    "address": "Ansbacher Straße 7, 91541 Rothenburg ob der Tauber, Deutschland",
+    "lat": 49.37642,
+    "lng": 10.18551,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "spresso-caff-bar-m-nsterplatz-24",
+    "name": "Spresso Caffébar",
+    "address": "Münsterplatz 24, 89073 Ulm, Deutschland",
+    "lat": 48.398536,
+    "lng": 9.993937,
+    "icon": "cafe",
+    "tags": [
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "gasthaus-krone-kennelbach-friedrich-schindler-stra-e-13",
+    "name": "Gasthaus Krone Kennelbach",
+    "address": "Friedrich-Schindler-Straße 13, 6921 Kennelbach, Österreich",
+    "lat": 47.4777,
+    "lng": 9.76318,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "quintacoira-kaffeer-sterei-caff-quintacoira-paradiesgasse-9",
+    "name": "Quintacoira Kaffeerösterei & Caffè (Quintacoira)",
+    "address": "Paradiesgasse 9, 7000 Chur Graubünden, Schweiz",
+    "lat": 46.84854,
+    "lng": 9.53119,
+    "icon": "cafe",
+    "tags": [
+      {
+        "name": "Caffè",
+        "color": "#353631"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Dolci",
+        "color": "#803f54"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "restaurant-bar-calanda-grabenstrasse-19",
+    "name": "Restaurant Bar Calanda",
+    "address": "Grabenstrasse 19, 7000 Coira, Svizzera",
+    "lat": 46.850862,
+    "lng": 9.532392999999997,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "gilda-casa-de-pinchos-y-tapas-corralejo-calle-mari-y-miguelin",
+    "name": "Gilda casa de pinchos y tapas Corralejo",
+    "address": "Calle Mari y Miguelin, 2, 35660 La Oliva, Las Palmas, España",
+    "lat": 28.7380475,
+    "lng": -13.867431,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "ganza-pizza-al-taglio-vicino-calle-la-milagrosa",
+    "name": "Ganza Pizza al taglio",
+    "address": "Vicino Calle La Milagrosa, 1, 35660 La Oliva (Las Palmas), Spagna",
+    "lat": 28.7378271,
+    "lng": -13.8686427,
+    "icon": "pizza",
+    "tags": [
+      {
+        "name": "Focaccia",
+        "color": "#12f8cd"
+      },
+      {
+        "name": "Farinata",
+        "color": "#40805f"
+      },
+      {
+        "name": "Pizza senza glutine",
+        "color": "#804070"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "happy-cactus-el-cotillo-bio-shop-vegan-food-avenida-los-lagos",
+    "name": "Happy Cactus El Cotillo - Bio Shop & Vegan Food",
+    "address": "Avenida los Lagos, 42, Local 3, 35650 La Oliva, Las Palmas, España",
+    "lat": 28.6818996,
+    "lng": -14.0099653,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "13-bistrot-tapas-bar-calle-la-iglesia",
+    "name": "13 Bistrot & Tapas Bar",
+    "address": "Calle la Iglesia, 13, 35660 La Oliva, Las Palmas, España",
+    "lat": 28.7397026,
+    "lng": -13.8673927,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "h2o-juice-bar-vegan-vicino-calle-la-milagrosa",
+    "name": "H2O Juice Bar Vegan",
+    "address": "Vicino Calle La Milagrosa, 29, 35660 La Oliva (Las Palmas), Spagna",
+    "lat": 28.7392197,
+    "lng": -13.8685085,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "tipico-canario-vicino-calle-gallegada",
+    "name": "Tipico Canario",
+    "address": "Vicino Calle Gallegada, 35628 Pájara (Las Palmas), Spagna",
+    "lat": 28.3992336,
+    "lng": -14.156464,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "ciao-mare-vicino-calle-garc-a-esc-mez",
+    "name": "Ciao Mare",
+    "address": "Vicino Calle García Escámez, 15, 35600 Puerto del Rosario (Las Palmas), Spagna",
+    "lat": 28.4961747,
+    "lng": -13.8608171,
+    "icon": "pizza",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Pizza",
+        "color": "#3f805f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "baobab-vicino-calle-jos-segura-torres",
+    "name": "BaoBab",
+    "address": "Vicino Calle José Segura Torres, 18, 35660 La Oliva (Las Palmas), Spagna",
+    "lat": 28.7399246,
+    "lng": -13.8678037,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "ko-bo-vegan-via-pastrengo-7",
+    "name": "Ko.Bo vegan",
+    "address": "Via Pastrengo 7, Milano, Italia",
+    "lat": 45.4864386,
+    "lng": 9.18741,
+    "icon": "donuts",
+    "tags": [
+      {
+        "name": "Dolci",
+        "color": "#803f54"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "takumi-ramen-yakisoba-via-luigi-porro-lambertenghi-24",
+    "name": "Takumi Ramen & Yakisoba",
+    "address": "Via Luigi Porro Lambertenghi 24, 20159 Milano, Italia",
+    "lat": 45.48894500732422,
+    "lng": 9.188056945800781,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Giapponese",
+        "color": "#6a803f"
+      },
+      {
+        "name": "Ramen",
+        "color": "#80773f"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "il-pangolino-vegan-bistrot-via-sant-evasio-35",
+    "name": "Il Pangolino - Vegan Bistrot",
+    "address": "Via Sant'Evasio 35, 15033 Casale Monferrato AL, Italia",
+    "lat": 45.13712692260742,
+    "lng": 8.452171325683594,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "antica-casa-rava-largo-catania-12",
+    "name": "Antica Casa Rava",
+    "address": "Largo Catania 12, 15121 Alessandria, Italia",
+    "lat": 44.92042050000001,
+    "lng": 8.6138961,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "nep-via-san-gregorio-45",
+    "name": "Nepà",
+    "address": "Via San Gregorio 45, 20124 Milano, Italia",
+    "lat": 45.4796182,
+    "lng": 9.2042834,
+    "icon": "bakery",
+    "tags": [
+      {
+        "name": "Dolci",
+        "color": "#803f54"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "il-lughino-vicino-via-solferino",
+    "name": "Il Lughino",
+    "address": "Vicino Via Solferino, 7, 20121 Milano MI, Italia",
+    "lat": 45.4742976,
+    "lng": 9.1871593,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Pranzo",
+        "color": "#d42fce"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "la-baita-dei-pittori-vicino-camasco",
+    "name": "La Baita dei Pittori",
+    "address": "Vicino Camasco, 13019 Varallo VC, Italia",
+    "lat": 45.8424065,
+    "lng": 8.299283,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "mandala-2-0-via-madonna-del-carmine-13",
+    "name": "Mandala 2.0",
+    "address": "Via Madonna del Carmine 13, 20010 Buscate MI, Italia",
+    "lat": 45.5438468,
+    "lng": 8.812676399999999,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "red-dragon-asian-kitchen-bar",
+    "name": "اليونانية بار ومطعم (Red Dragon - Asian Kitchen & Bar)",
+    "address": "الغردقة, البحر الاحمر, مصر",
+    "lat": 27.226133,
+    "lng": 33.84075,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "tandoor-restaurant",
+    "name": "Tandoor Restaurant",
+    "address": "شارع احمد رجب, الغردقة, البحر الأحمر, مصر",
+    "lat": 27.406839,
+    "lng": 33.6743014,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "l-arcobaleno-via-alessandro-luzzago-6a",
+    "name": "L'arcobaleno",
+    "address": "Via Alessandro Luzzago 6A, 25126 Brescia, Italia",
+    "lat": 45.5440553,
+    "lng": 10.2060692,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "pizzeria-berber-milano-isola-via-sebenico-21",
+    "name": "Pizzeria Berberè - Milano Isola",
+    "address": "Via Sebenico 21, 20124 Milano, Italia",
+    "lat": 45.48748699999999,
+    "lng": 9.191046499999999,
+    "icon": "pizza",
+    "tags": [
+      {
+        "name": "Pizza",
+        "color": "#3f805f"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "la-gaba-osteria-brassicola-via-mede",
+    "name": "La Gaba Osteria Brassicola",
+    "address": "Via Mede, 75, 27020 Sartirana Lomellina PV, Italie",
+    "lat": 45.1121309,
+    "lng": 8.678483600000002,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "kitepower-el-gouna-fzr-1484513-el-gouna-hurghada-red-sea-84513-egypt",
+    "name": "Kitepower El Gouna",
+    "address": "FZR-1484513\nEl Gouna\nHurghada\nRed Sea\n84513\nEgypt",
+    "lat": 27.4384147,
+    "lng": 33.6556852,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "daily-dose-by-cafe-younes",
+    "name": "Daily dose by Cafe Younes",
+    "address": "شارع احمد رجب, الغردقة, البحر الأحمر, مصر",
+    "lat": 27.406831741333008,
+    "lng": 33.67534255981445,
+    "icon": "cafe",
+    "tags": [
+      {
+        "name": "Caffè",
+        "color": "#353631"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "the-bagel-tree-vicino-88",
+    "name": "The Bagel Tree",
+    "address": "Vicino كلوب 88 بول اند بيتش رستوران, Hurghada, El Bahr El Ahmar, Egitto",
+    "lat": 27.4101538,
+    "lng": 33.6762295,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pranzo",
+        "color": "#d42fce"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "zomba-vicino",
+    "name": "Zomba",
+    "address": "Vicino بنزينى جوس بار, Hurghada, El Bahr El Ahmar, Egitto",
+    "lat": 27.3957769,
+    "lng": 33.675627,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "nicole-s-greenhouse-vicino-easydiversacademy-el-gouna",
+    "name": "Nicole's Greenhouse",
+    "address": "Vicino Easydiversacademy el Gouna, Hurghada, El Bahr El Ahmar, Egitto",
+    "lat": 27.4001307,
+    "lng": 33.6728316,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "tiger-wok-vicino",
+    "name": "Tiger Wok",
+    "address": "Vicino وسط مدينة ستار بازار, Hurghada, El Bahr El Ahmar, Egitto",
+    "lat": 27.3959758,
+    "lng": 33.6761465,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "gelato-giusto-via-san-gregorio-17",
+    "name": "Gelato Giusto",
+    "address": "Via San Gregorio 17, 20124 Milano, Italia",
+    "lat": 45.47854479999999,
+    "lng": 9.206343199999997,
+    "icon": "icecream",
+    "tags": [
+      {
+        "name": "Gelato",
+        "color": "#753f80"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "convita-via-della-fiera-66",
+    "name": "Convita",
+    "address": "Via della Fiera 66, 47923 Rimini, Italia",
+    "lat": 44.04814529418945,
+    "lng": 12.565439224243164,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pranzo",
+        "color": "#d42fce"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "gelateria-santa-colomba-piazza-malatesta-35",
+    "name": "Gelateria Santa Colomba",
+    "address": "Piazza Malatesta 35, 47923 Rimini, Italia",
+    "lat": 44.0607255,
+    "lng": 12.5645104,
+    "icon": "icecream",
+    "tags": [
+      {
+        "name": "Gelato",
+        "color": "#753f80"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "la-pinsallegra-via-quintino-sella-19a",
+    "name": "La Pinsallegra",
+    "address": "Via Quintino Sella 19A, 47921 Rimini, Italia",
+    "lat": 44.06103515625,
+    "lng": 12.570150375366211,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pinsa",
+        "color": "#c12020"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "caff-cavour-piazza-cavour",
+    "name": "Caffè Cavour",
+    "address": "Piazza Cavour, 12, 47921 Rimini, Italia",
+    "lat": 44.0604375,
+    "lng": 12.5658488,
+    "icon": "bar",
+    "tags": [
+      {
+        "name": "Aperitivo",
+        "color": "#568040"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "beo-cafe-piazzale-benedetto-croce-3",
+    "name": "Beo Cafe",
+    "address": "Piazzale Benedetto Croce 3, 47921 Rimini, Italia",
+    "lat": 44.05930709838867,
+    "lng": 12.590792655944824,
+    "icon": "soup",
+    "tags": [
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Dolci",
+        "color": "#803f54"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "angolo-divino-via-san-giuliano-43",
+    "name": "Angolo Divino",
+    "address": "Via San Giuliano 43, 47921 Rimini, Italia",
+    "lat": 44.0653203,
+    "lng": 12.5630382,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "gelato-crema-via-giovanni-da-procida",
+    "name": "Gelato Crema",
+    "address": "Via Giovanni da Procida, 29 20149 Milan Italy",
+    "lat": 45.48078536987305,
+    "lng": 9.160516738891602,
+    "icon": "icecream",
+    "tags": [
+      {
+        "name": "Gelato",
+        "color": "#753f80"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "fradiavolo-pizzeria-milano-citylife-shopping-district-piazza-tre-torri",
+    "name": "Fradiavolo Pizzeria - Milano Citylife Shopping District",
+    "address": "Piazza Tre Torri, 20145 Milano MI, Italia",
+    "lat": 45.47751998901367,
+    "lng": 9.15682315826416,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pizza",
+        "color": "#3f805f"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "katchi-ice-cream-hackescher-markt-oranienburger-stra-e-89",
+    "name": "Katchi Ice Cream (Hackescher Markt)",
+    "address": "Oranienburger Straße 89, Mitte, 10178 Berlin, Deutschland",
+    "lat": 52.52352523803711,
+    "lng": 13.400450706481934,
+    "icon": "icecream",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Gelato",
+        "color": "#753f80"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "swing-kitchen-georgenstra-e-201",
+    "name": "Swing Kitchen",
+    "address": "Georgenstraße 201, 10117 Berlin, Deutschland",
+    "lat": 52.5199771,
+    "lng": 13.3895442,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "brammibal-s-donuts-rosa-luxemburg-stra-e-5",
+    "name": "Brammibal's Donuts",
+    "address": "Rosa-Luxemburg-Straße 5, 10178 Berlin, Deutschland",
+    "lat": 52.523677825927734,
+    "lng": 13.409106254577637,
+    "icon": "cafe",
+    "tags": [
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "f-rsters-foersters-das-vegane-restaurant-dunckerstra-e-2a",
+    "name": "Försters (Foersters - das Vegane Restaurant)",
+    "address": "Dunckerstraße 2A, 10437 Berlin, Deutschland",
+    "lat": 52.5407723,
+    "lng": 13.4195099,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "ama-caf-dorotheenstra-e-83",
+    "name": "Ama Café",
+    "address": "Dorotheenstraße 83, 10117 Berlin, Deutschland",
+    "lat": 52.51829,
+    "lng": 13.383876,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "bakarameistarinn-stigahl-45-47",
+    "name": "Bakarameistarinn",
+    "address": "Stigahlíð 45-47, 105 Reykjavík, Ísland",
+    "lat": 64.13079833984375,
+    "lng": -21.900362014770508,
+    "icon": "bakery",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "samkomuh-si-stapa-grundarsl-2",
+    "name": "Samkomuhúsið á Stapa",
+    "address": "Grundarslóð 2, 356 Snæfellsbær, Ísland",
+    "lat": 64.7673909,
+    "lng": -23.6299633,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Pranzo",
+        "color": "#d42fce"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "geirabakar-borgarnesi-digranesgata-6",
+    "name": "Geirabakarí Borgarnesi",
+    "address": "Digranesgata 6, 310 Borgarnes, Ísland",
+    "lat": 64.541062,
+    "lng": -21.9091846,
+    "icon": "cafe",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "hla-an-veitingah-s-mi-hraun-2",
+    "name": "Hlaðan Veitingahús",
+    "address": "Miðhraun 2, 342 Stykkishólmur, Ísland",
+    "lat": 64.85989379882812,
+    "lng": -22.664539337158203,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "blys-vicino-vesturbraut-12a",
+    "name": "Blys",
+    "address": "Vicino Vesturbraut 12A, 370 Dalabyggð, Islanda",
+    "lat": 65.1086833,
+    "lng": -21.7621223,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pranzo",
+        "color": "#d42fce"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "saudarkroks-bakari-a-algata-5",
+    "name": "Saudarkroks Bakari",
+    "address": "Aðalgata 5, 550 Sauðárkrókur, Ísland",
+    "lat": 65.7503838,
+    "lng": -19.6506678,
+    "icon": "cafe",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "kaffi-krokur-a-algata-16",
+    "name": "Kaffi Krokur",
+    "address": "Aðalgata 16, 550 Sauðárkrókur, Ísland",
+    "lat": 65.7511433,
+    "lng": -19.6504865,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "ketilkaffi-kaupvangsstr-ti-8",
+    "name": "Ketilkaffi",
+    "address": "Kaupvangsstræti 8, 600 Akureyri, Ísland",
+    "lat": 65.68060302734375,
+    "lng": -18.091257095336914,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "gamli-baukur-hafnarst-tt-9",
+    "name": "Gamli baukur",
+    "address": "Hafnarstétt 9, 640 Húsavík, Ísland",
+    "lat": 66.0460705,
+    "lng": -17.3442699,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pranzo",
+        "color": "#d42fce"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "gl-glod-restaurant-sk-garl-nd",
+    "name": "Glóð (Glod Restaurant)",
+    "address": "Skógarlönd, 700 Fljótsdalshérað, Ísland",
+    "lat": 65.262794,
+    "lng": -14.394108,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "caf-sumarlina-b-avegur-59",
+    "name": "Café Sumarlina",
+    "address": "Búðavegur 59, 750 Fáskrúðsfjörður, Ísland",
+    "lat": 64.9316839,
+    "lng": -14.0225478,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pranzo",
+        "color": "#d42fce"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "heppa-restaurant-heppuvegur-6",
+    "name": "Heppa Restaurant",
+    "address": "Heppuvegur 6, 780 Höfn í Hornafirði, Ísland",
+    "lat": 64.25064849853516,
+    "lng": -15.201166152954102,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "systrakaffi-klausturvegur-13",
+    "name": "Systrakaffi",
+    "address": "Klausturvegur 13, 880 Kirkjubæjarklaustur, Ísland",
+    "lat": 63.7904479,
+    "lng": -18.0476591,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "gamla-fj-si-hvassafell",
+    "name": "Gamla Fjósið",
+    "address": "Hvassafell",
+    "lat": 63.54274030000001,
+    "lng": -19.6993446,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "vigtin-bakh-s-strandvegur-30",
+    "name": "Vigtin Bakhús",
+    "address": "Strandvegur 30, 900 Vestmannaeyjar, Ísland",
+    "lat": 63.44236,
+    "lng": -20.26972,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "kaffi-kr-s-austurvegur-7",
+    "name": "Kaffi Krús",
+    "address": "Austurvegur 7, 800 Selfoss, Ísland",
+    "lat": 63.93754380000001,
+    "lng": -21.0005278,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "lindabakari-vicino-gurhvarf-6",
+    "name": "Lindabakari",
+    "address": "Vicino Ögurhvarf 6, 203 Kópavogsbær, Islanda",
+    "lat": 64.0961601,
+    "lng": -21.8028717,
+    "icon": "bakery",
+    "tags": [
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "mama-reykjavik-bankastr-ti-2",
+    "name": "Mama Reykjavik",
+    "address": "Bankastræti 2, 101 Reykjavík, Ísland",
+    "lat": 64.14635,
+    "lng": -21.93272,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "linfa-gluten-free-and-vegan-vicino-via-ambrogio-da-fossano-bergognone",
+    "name": "Linfa - Gluten free and Vegan",
+    "address": "Vicino Via Ambrogio da Fossano Bergognone, 24, 20144 Milano MI, Italia",
+    "lat": 45.4537993,
+    "lng": 9.1635648,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "love-gelato-via-roma-74",
+    "name": "Love&Gelato",
+    "address": "Via Roma 74, 20013 Magenta MI, Italia",
+    "lat": 45.465415954589844,
+    "lng": 8.880513191223145,
+    "icon": "icecream",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Gelato",
+        "color": "#753f80"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "perfetta-slow-pizza-at-home-via-alessandro-volta-62",
+    "name": "PerFetta - slow pizza at home",
+    "address": "Via Alessandro Volta 62, 20013 Magenta MI, Italia",
+    "lat": 45.46739,
+    "lng": 8.88432,
+    "icon": "pizza",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Pizza",
+        "color": "#3f805f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "ristorante-long-jin-corso-torino-52d",
+    "name": "Ristorante Long Jin",
+    "address": "Corso Torino 52D, 28100 Novara, Italia",
+    "lat": 45.4386273,
+    "lng": 8.6082793,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cinese",
+        "color": "#804b3f"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "sangria-tapas-y-alegria-corso-giuseppe-garibaldi-34",
+    "name": "Sangria, Tapas y Alegria",
+    "address": "Corso Giuseppe Garibaldi 34, 27100 Pavia, Italia",
+    "lat": 45.1819882,
+    "lng": 9.160193000000001,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "raw-nest-ulica-czysta-8",
+    "name": "Raw Nest",
+    "address": "ulica Czysta 8, 31-121 Kraków, Polska",
+    "lat": 50.063725,
+    "lng": 19.926026,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "cakester-cafe-krak-w-wi-tego-tomasza-25",
+    "name": "Cakester Cafe Kraków",
+    "address": "Świętego Tomasza 25, 31-027 Kraków, Poland",
+    "lat": 50.062302,
+    "lng": 19.94145,
+    "icon": "cafe",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "vegan-af-ramen-krak-w-ulica-karmelicka-10",
+    "name": "Vegan Af Ramen Kraków",
+    "address": "ulica Karmelicka 10, 31-133 Kraków, Polska",
+    "lat": 50.064045,
+    "lng": 19.932019,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "veganic-karmelicka-34",
+    "name": "Veganic",
+    "address": "Karmelicka 34, 31-128 Kraków, Poland",
+    "lat": 50.0648062,
+    "lng": 19.9271946,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "bun-bakery-dolnych-m-yn-w-3",
+    "name": "Bun Bakery",
+    "address": "Dolnych Młynów 3, 31-124 Kraków, Poland",
+    "lat": 50.0637479,
+    "lng": 19.9279699,
+    "icon": "bakery",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "dem-pavia-corso-strada-nuova",
+    "name": "Dem Pavia",
+    "address": "Corso Strada Nuova, 86, 27100 Pavia PV, Italia",
+    "lat": 45.1857556,
+    "lng": 9.155204600000001,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "taverna-dell-ortica-via-bettole-50",
+    "name": "Taverna dell'Ortica",
+    "address": "Via Bettole 50, 28069 Trecate NO, Italia",
+    "lat": 45.4391844,
+    "lng": 8.7207248,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "il-risutin-via-del-monastero-10",
+    "name": "Il Risutin",
+    "address": "Via del Monastero 10, 20087 Casterno, Robecco sul Naviglio MI, Italia",
+    "lat": 45.42995,
+    "lng": 8.86996,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pranzo",
+        "color": "#d42fce"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "piadina-ciliegina-lungomare-italia",
+    "name": "Piadina Ciliegina",
+    "address": "Lungomare Italia, 25, 44022 Comacchio FE, Italia",
+    "lat": 44.73880379999999,
+    "lng": 12.2418168,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Pranzo",
+        "color": "#d42fce"
+      },
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "il-carrettino-via-bengasi-7",
+    "name": "Il Carrettino",
+    "address": "Via Bengasi 7, 58100 Grosseto, Italia",
+    "lat": 42.7611087,
+    "lng": 11.1191021,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Pizza senza glutine",
+        "color": "#804070"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "osteria-l-orologio-via-leonardo-madoni-7",
+    "name": "Osteria L'Orologio",
+    "address": "Via Leonardo Madoni 7, 58014 Manciano GR, Italia",
+    "lat": 42.586936,
+    "lng": 11.515665,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "gelateria-le-logge-corso-italia-78",
+    "name": "Gelateria Le Logge",
+    "address": "Corso Italia 78, 58015 Orbetello GR, Italia",
+    "lat": 42.43794339999999,
+    "lng": 11.2105497,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "baraka-lounge-restaurant-via-vincenzo-gioberti",
+    "name": "Baraka' Lounge Restaurant",
+    "address": "Via Vincenzo Gioberti, 78, 58015 Orbetello GR, Italia",
+    "lat": 42.4376751,
+    "lng": 11.2118889,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "il-gelato-di-gi-bu-largo-camillo-benso-di-cavour",
+    "name": "Il Gelato di Giòbu",
+    "address": "Largo Camillo Benso di Cavour, 10, 28100 Novara NO, Italia",
+    "lat": 45.449212,
+    "lng": 8.622259000000001,
+    "icon": "icecream",
+    "tags": [
+      {
+        "name": "Gelato",
+        "color": "#753f80"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "al-pum-rus-via-cerano",
+    "name": "Al Pum Rus",
+    "address": "Via Cerano, 1, 28060 Sozzago NO, Italia",
+    "lat": 45.3972175,
+    "lng": 8.7237238,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "mandarine-lebanese-restaurant-vicino-mandarin",
+    "name": "Mandarine Lebanese Restaurant",
+    "address": "Vicino Mandarin, Hurghada, El Bahr El Ahmar, Egitto",
+    "lat": 27.1867117,
+    "lng": 33.8289526,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "moby-dick-vicino",
+    "name": "Moby Dick",
+    "address": "Vicino شارع شري, Hurghada, El Bahr El Ahmar, Egitto",
+    "lat": 27.220646,
+    "lng": 33.8375361,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "la-cantina-vicino",
+    "name": "La Cantina",
+    "address": "Vicino مطعم جريل آند شيل, Hurghada, El Bahr El Ahmar, Egitto",
+    "lat": 27.2268849,
+    "lng": 33.8414257,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "nubian-sky-egyptian-food-vicino",
+    "name": "Nubian Sky - Egyptian food",
+    "address": "Vicino فندق ذا باي الغردقة مارينا, Hurghada, El Bahr El Ahmar, Egitto",
+    "lat": 27.2261195,
+    "lng": 33.8411017,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "dario-pasticceria-gelateria-bar-via-europa-2-a",
+    "name": "DARIO - Pasticceria Gelateria Bar",
+    "address": "Via Europa 2\\a, 38060 Volano TN, Italia",
+    "lat": 45.9168484,
+    "lng": 11.0581948,
+    "icon": "bakery",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Dolci",
+        "color": "#803f54"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "la-taverna-degli-arna-via-vincenzo-da-filicaia-4",
+    "name": "La Taverna Degli Arna",
+    "address": "Via Vincenzo da Filicaia 4, 20162 Milano, Italia",
+    "lat": 45.520206451416016,
+    "lng": 9.191221237182617,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "ristorante-peruggini-via-alessandro-manzoni-14",
+    "name": "Ristorante Peruggini",
+    "address": "Via Alessandro Manzoni 14, 27010 Vistarino PV, Italia",
+    "lat": 45.2126835,
+    "lng": 9.3037961,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "circolo-impatto-zero-via-montemaino-2b",
+    "name": "Circolo Impatto Zero",
+    "address": "Via Montemaino 2B, 27100 Pavia, Italia",
+    "lat": 45.22046709999999,
+    "lng": 9.1686953,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "tolstoy-plant-based-eatery-rechte-wienzeile-1b",
+    "name": "Tolstoy - Plant-Based Eatery",
+    "address": "Rechte Wienzeile 1b, 1040 Wien, Österreich",
+    "lat": 48.1995506,
+    "lng": 16.3661854,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "cafe-bl-tezeit-laurenzerberg-1",
+    "name": "Cafe Blütezeit",
+    "address": "Laurenzerberg 1, 1010 Wien, Österreich",
+    "lat": 48.210655212402344,
+    "lng": 16.377965927124023,
+    "icon": "bakery",
+    "tags": [
+      {
+        "name": "Dolci",
+        "color": "#803f54"
+      },
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "joma-hoher-markt-10",
+    "name": "Joma",
+    "address": "Hoher Markt 10, 1010 Wien, Österreich",
+    "lat": 48.2109134,
+    "lng": 16.3733344,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "die-sattlerei-heinestra-e-25",
+    "name": "Die Sattlerei",
+    "address": "Heinestraße 25, 1020 Wien, Österreich",
+    "lat": 48.21968460083008,
+    "lng": 16.380367279052734,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "swing-kitchen-operngasse-24",
+    "name": "Swing Kitchen",
+    "address": "Operngasse 24, 1040 Wien, Österreich",
+    "lat": 48.1985681,
+    "lng": 16.3661913,
+    "icon": "fastfood",
+    "tags": [
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Burger",
+        "color": "#3f6080"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "gelateria-castelletto-rotenturmstra-e-24",
+    "name": "Gelateria Castelletto",
+    "address": "Rotenturmstraße 24, 1010 Wien, Österreich",
+    "lat": 48.2117266,
+    "lng": 16.376258,
+    "icon": "bakery",
+    "tags": [
+      {
+        "name": "Colazione",
+        "color": "#807440"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "vibrazioni-vegetali-by-cucinarock-viale-giuseppe-mazzini-53",
+    "name": "Vibrazioni Vegetali by Cucinarock",
+    "address": "Viale Giuseppe Mazzini 53, 20081 Abbiategrasso MI, Italia",
+    "lat": 45.3989878,
+    "lng": 8.9235132,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "la-mi-mama-via-luigi-poletti-32",
+    "name": "La Mi Mama",
+    "address": "Via Luigi Poletti 32, 47923 Rimini, Italia",
+    "lat": 44.05968,
+    "lng": 12.564974,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "locanda-del-carmine-piazza-del-carmine-7a",
+    "name": "Locanda del Carmine",
+    "address": "Piazza del Carmine 7A, 27100 Pavia, Italia",
+    "lat": 45.18709020000001,
+    "lng": 9.1522594,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Cucina tipica",
+        "color": "#3f5780"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "botticella-piazza-del-carmine-8",
+    "name": "Botticella",
+    "address": "Piazza del Carmine 8, 27100 Pavia, Italia",
+    "lat": 45.187051,
+    "lng": 9.152461999999998,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pizza",
+        "color": "#3f805f"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "kame-ramen-via-jacopo-bossolaro-27",
+    "name": "Kame Ramen",
+    "address": "Via Jacopo Bossolaro 27, 27100 Pavia, Italy",
+    "lat": 45.1853,
+    "lng": 9.15298,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pausa pranzo",
+        "color": "#32d90d"
+      },
+      {
+        "name": "Cena",
+        "color": "#3f806b"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "abbiategrasso-piacere-terra-bio-via-giovanni-pascoli",
+    "name": "Abbiategrasso Piacere Terra Bio",
+    "address": "Via Giovanni Pascoli, 5 20081 Abbiategrasso Italy",
+    "lat": 45.38665,
+    "lng": 8.92047,
+    "icon": "restaurant",
+    "tags": [
+      {
+        "name": "Pranzo",
+        "color": "#d42fce"
+      },
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  },
+  {
+    "id": "flower-burger-viale-vittorio-veneto",
+    "name": "Flower Burger",
+    "address": "Viale Vittorio Veneto, 10, 20124 Milano MI, Italia",
+    "lat": 45.4759493,
+    "lng": 9.2028201,
+    "icon": "fastfood",
+    "tags": [
+      {
+        "name": "Per provare",
+        "color": "#6edf38"
+      },
+      {
+        "name": "Amici",
+        "color": "#408fff"
+      },
+      {
+        "name": "Vegan",
+        "color": "#64803f"
+      },
+      {
+        "name": "Burger",
+        "color": "#3f6080"
+      }
+    ],
+    "note": "",
+    "source": "mapstr-import"
+  }
+]

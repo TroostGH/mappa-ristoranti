@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Seed iniziale — Mappa Ristoranti</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div style="max-width:680px;margin:40px auto;padding:24px;background:#fff;border-radius:14px;box-shadow:0 4px 20px rgba(0,0,0,0.06);">
+    <h1>🌱 Seed iniziale</h1>
+    <p>Questa pagina carica una sola volta i <strong>229 ristoranti vegan</strong> del file mapstr.zip dentro la collezione <code>restaurants</code> di Firestore.</p>
+    <p style="color:#a07d00;background:#fff7d6;padding:10px 14px;border-radius:8px;font-size:14px;">
+      ⚠️ Esegui questa azione <strong>una sola volta</strong>. Dopo l'importazione, cancella o rinomina questo file per evitare duplicati.
+    </p>
+
+    <div style="margin:24px 0;">
+      <button id="run" style="background:#64803f;color:#fff;border:0;padding:14px 22px;font-size:16px;border-radius:8px;cursor:pointer;font-weight:600;">
+        🚀 Importa 229 ristoranti su Firestore
+      </button>
+    </div>
+
+    <div id="log" style="font-family:Menlo,monospace;font-size:13px;background:#1a1a1a;color:#9eff9e;padding:14px;border-radius:8px;min-height:80px;max-height:380px;overflow-y:auto;white-space:pre-wrap;"></div>
+
+    <p style="margin-top:24px;font-size:13px;color:#666;">
+      Quando finisce, vai a <a href="index.html">index.html</a> per vedere l'app.
+    </p>
+  </div>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
+    import { getFirestore, collection, doc, setDoc, getDocs, writeBatch } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js";
+    import { firebaseConfig } from "./config.js";
+
+    const log = (msg) => {
+      const el = document.getElementById("log");
+      el.textContent += msg + "\n";
+      el.scrollTop = el.scrollHeight;
+    };
+
+    document.getElementById("run").onclick = async () => {
+      const btn = document.getElementById("run");
+      btn.disabled = true;
+      btn.textContent = "Importazione in corso…";
+      try {
+        log("→ Inizializzo Firebase…");
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const restaurants = collection(db, "restaurants");
+
+        log("→ Verifico se la collezione è vuota…");
+        const existing = await getDocs(restaurants);
+        if (!existing.empty) {
+          const confirmed = confirm(`La collezione contiene già ${existing.size} documenti. Importare comunque (rischio duplicati)?`);
+          if (!confirmed) {
+            log("× Annullato dall'utente.");
+            btn.disabled = false;
+            btn.textContent = "🚀 Importa 229 ristoranti su Firestore";
+            return;
+          }
+        }
+
+        log("→ Carico il file JSON con 229 ristoranti…");
+        const resp = await fetch("./seed-data/restaurants-seed.json");
+        if (!resp.ok) throw new Error("Impossibile leggere seed-data/restaurants-seed.json");
+        const seed = await resp.json();
+        log(`→ Trovati ${seed.length} ristoranti nel file.`);
+
+        // Firestore batch limit = 500
+        const CHUNK = 400;
+        let done = 0;
+        for (let i = 0; i < seed.length; i += CHUNK) {
+          const batch = writeBatch(db);
+          const slice = seed.slice(i, i + CHUNK);
+          for (const r of slice) {
+            const ref = doc(restaurants, r.id);
+            const { id, ...rest } = r;
+            batch.set(ref, { ...rest, createdAt: new Date() });
+          }
+          await batch.commit();
+          done += slice.length;
+          log(`✓ Caricati ${done}/${seed.length}…`);
+        }
+        log("\n✅ Importazione completata!");
+        log("Ora puoi aprire index.html e usare l'app.");
+        btn.textContent = "✅ Importazione completata";
+      } catch (e) {
+        log("❌ ERRORE: " + e.message);
+        console.error(e);
+        btn.disabled = false;
+        btn.textContent = "🚀 Riprova";
+      }
+    };
+  </script>
+</body>
+</html>
