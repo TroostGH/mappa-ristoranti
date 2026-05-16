@@ -3,7 +3,7 @@
 // ============================================================
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
 import {
-  getFirestore, collection, getDocs, addDoc, deleteDoc, doc,
+  getFirestore, collection, getDocs, addDoc, deleteDoc, doc, updateDoc,
   serverTimestamp, query, orderBy
 } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js";
 import { firebaseConfig, GOOGLE_MAPS_API_KEY, MAP_DEFAULT_CENTER, MAP_DEFAULT_ZOOM } from "./config.js";
@@ -21,10 +21,13 @@ const state = {
   sortBy: localStorage.getItem("sortBy") || "recent", // "recent" | "oldest" | "name"
   map: null,
   markers: [],
+  markerClusterer: null,
+  MarkerClustererClass: null,
   placesService: null,
   autocompleteService: null,
   pendingPlace: null,      // place selezionato pronto da salvare
   infoWindow: null,
+  currentDetailRestaurant: null, // ristorante aperto nel modal
 };
 
 // --- DOM refs ------------------------------------------------------
@@ -147,6 +150,10 @@ async function removeRestaurant(id) {
   await deleteDoc(doc(db, "restaurants", id));
 }
 
+async function updateRestaurant(id, fields) {
+  await updateDoc(doc(db, "restaurants", id), fields);
+}
+
 // --- Render: list --------------------------------------------------
 function renderTagFilters() {
   const tags = uniqueTagsFrom(state.restaurants);
@@ -195,20 +202,36 @@ function renderList() {
   for (const r of filtered) {
     const card = document.createElement("div");
     card.className = "card";
+    const tagsHtml = (r.tags || []).map(t => `<span class="tag-pill" style="background:${t.color || '#64803f'}">${escapeHtml(t.name)}</span>`).join("");
+    const tagsCount = (r.tags || []).length;
+    const ratingHtml = r.rating
+      ? `<div class="card-rating">⭐ ${Number(r.rating).toFixed(1)}${r.userRatingsTotal ? ` <span class="rating-count">(${r.userRatingsTotal})</span>` : ""}</div>`
+      : "";
     card.innerHTML = `
       <div class="card-head">
         <span class="card-icon">${iconEmoji(r.icon)}</span>
         <div class="card-name">${escapeHtml(r.name)}</div>
       </div>
       <div class="card-address">${escapeHtml(r.address || "")}</div>
-      <div class="card-tags">
-        ${(r.tags || []).map(t => `<span class="tag-pill" style="background:${t.color || '#64803f'}">${escapeHtml(t.name)}</span>`).join("")}
+      ${ratingHtml}
+      <div class="card-tags-wrap">
+        <div class="card-tags collapsed">${tagsHtml}</div>
+        ${tagsCount > 0 ? `<button class="tags-toggle" aria-label="Espandi tag">▾</button>` : ""}
       </div>
       <div class="card-actions">
         <a class="maps-link" href="${navLinkFor(r)}" target="_blank" rel="noopener">🧭 Indicazioni</a>
         <button data-id="${r.id}" class="btn-detail">Dettagli</button>
       </div>
     `;
+    const toggleBtn = card.querySelector(".tags-toggle");
+    if (toggleBtn) {
+      toggleBtn.onclick = (e) => {
+        e.stopPropagation();
+        const tagsEl = card.querySelector(".card-tags");
+        const expanded = tagsEl.classList.toggle("collapsed") === false;
+        toggleBtn.textContent = expanded ? "▴" : "▾";
+      };
+    }
     card.querySelector(".btn-detail").onclick = (e) => { e.stopPropagation(); openDetail(r); };
     card.onclick = () => openDetail(r);
     listContainer.appendChild(card);
@@ -222,19 +245,32 @@ function escapeHtml(s) {
 }
 
 function openDetail(r) {
+  state.currentDetailRestaurant = r;
+  renderDetailView(r);
+  detailModal.classList.remove("hidden");
+}
+
+function renderDetailView(r) {
+  const tagsHtml = (r.tags || []).map(t => `<span class="tag-pill" style="background:${t.color || '#64803f'}">${escapeHtml(t.name)}</span>`).join("");
+  const ratingHtml = r.rating
+    ? `<div class="detail-rating">⭐ <strong>${Number(r.rating).toFixed(1)}</strong>${r.userRatingsTotal ? ` <span class="rating-count">(${r.userRatingsTotal} recensioni)</span>` : ""}</div>`
+    : `<button id="refresh-google" class="link-btn">🔄 Recupera info da Google Maps</button>`;
   modalContent.innerHTML = `
-    <h2 style="margin:0 0 4px 0;">${iconEmoji(r.icon)} ${escapeHtml(r.name)}</h2>
-    <p style="color:#666;font-size:14px;margin:0 0 14px 0;">${escapeHtml(r.address || "")}</p>
-    <div class="card-tags" style="margin-bottom:14px;">
-      ${(r.tags || []).map(t => `<span class="tag-pill" style="background:${t.color || '#64803f'}">${escapeHtml(t.name)}</span>`).join("")}
+    <div class="detail-header">
+      <h2>${iconEmoji(r.icon)} ${escapeHtml(r.name)}</h2>
+      <button id="edit-btn" class="icon-btn" title="Modifica">✏️</button>
     </div>
-    ${r.note ? `<p style="background:#f7f5f0;padding:10px;border-radius:8px;font-size:14px;">📝 ${escapeHtml(r.note)}</p>` : ""}
-    <div style="display:flex;gap:8px;margin-top:18px;flex-wrap:wrap;">
-      <a href="${mapsLinkFor(r)}" target="_blank" rel="noopener" style="flex:1;text-align:center;background:#64803f;color:#fff;padding:10px;border-radius:8px;text-decoration:none;font-weight:600;">📍 Apri in Maps</a>
-      <a href="${navLinkFor(r)}" target="_blank" rel="noopener" style="flex:1;text-align:center;background:#4a6328;color:#fff;padding:10px;border-radius:8px;text-decoration:none;font-weight:600;">🧭 Navigazione</a>
+    <p class="detail-addr">${escapeHtml(r.address || "")}</p>
+    ${ratingHtml}
+    <div class="card-tags" style="margin:10px 0 14px 0;">${tagsHtml}</div>
+    ${r.note ? `<div class="detail-note">📝 ${escapeHtml(r.note)}</div>` : `<div class="detail-note-empty">Nessuna nota personale. Clicca ✏️ per aggiungerla.</div>`}
+    <div class="detail-actions">
+      <a href="${mapsLinkFor(r)}" target="_blank" rel="noopener" class="btn-primary">📍 Apri in Maps</a>
+      <a href="${navLinkFor(r)}" target="_blank" rel="noopener" class="btn-primary btn-dark">🧭 Navigazione</a>
     </div>
-    <button id="modal-delete" style="margin-top:14px;width:100%;padding:10px;background:#fff;color:#b33;border:1px solid #fcc;border-radius:8px;cursor:pointer;font-weight:500;">🗑️ Rimuovi dall'elenco</button>
+    <button id="modal-delete" class="btn-danger">🗑️ Rimuovi dall'elenco</button>
   `;
+  document.getElementById("edit-btn").onclick = () => renderEditView(r);
   document.getElementById("modal-delete").onclick = async () => {
     if (!confirm(`Rimuovere "${r.name}" dall'elenco?`)) return;
     await removeRestaurant(r.id);
@@ -242,26 +278,147 @@ function openDetail(r) {
     toast("Ristorante rimosso");
     await loadRestaurants();
   };
-  detailModal.classList.remove("hidden");
+  const refreshBtn = document.getElementById("refresh-google");
+  if (refreshBtn) {
+    refreshBtn.onclick = () => refreshGoogleInfo(r);
+  }
+}
+
+function renderEditView(r) {
+  const tagsString = (r.tags || []).map(t => t.name).join(", ");
+  modalContent.innerHTML = `
+    <h2 style="margin:0 0 12px 0;">✏️ Modifica</h2>
+    <p class="detail-addr" style="margin-bottom:14px;">${escapeHtml(r.name)}</p>
+    <label class="field-label">Tag (separati da virgola)</label>
+    <input type="text" id="edit-tags" value="${escapeHtml(tagsString)}" placeholder="Vegan, Pizza, Per provare" />
+    <label class="field-label">Nota personale</label>
+    <textarea id="edit-note" rows="3" placeholder="Es. Pizza al tartufo eccellente!">${escapeHtml(r.note || "")}</textarea>
+    <div class="btn-row" style="margin-top:14px;">
+      <button id="save-edit" class="btn-primary">💾 Salva modifiche</button>
+      <button id="cancel-edit">Annulla</button>
+    </div>
+  `;
+  const tagPalette = ["#64803f", "#753f80", "#803f54", "#6edf38", "#3f806b", "#32d90d", "#3f805f", "#80683f"];
+  document.getElementById("save-edit").onclick = async () => {
+    const newTagsText = document.getElementById("edit-tags").value;
+    const newNote = document.getElementById("edit-note").value.trim();
+    // Preserva il colore esistente per tag con lo stesso nome
+    const existingColorByName = Object.fromEntries((r.tags || []).map(t => [t.name, t.color]));
+    const newTags = newTagsText.split(",").map(s => s.trim()).filter(Boolean).map((name, i) => ({
+      name,
+      color: existingColorByName[name] || tagPalette[i % tagPalette.length]
+    }));
+    try {
+      await updateRestaurant(r.id, { tags: newTags, note: newNote });
+      toast("Modifiche salvate");
+      await loadRestaurants();
+      // Aggiorna lo stato del modal corrente
+      const updated = state.restaurants.find(x => x.id === r.id);
+      if (updated) {
+        state.currentDetailRestaurant = updated;
+        renderDetailView(updated);
+      } else {
+        detailModal.classList.add("hidden");
+      }
+    } catch (e) {
+      console.error(e);
+      toast("Errore di salvataggio: " + e.message);
+    }
+  };
+  document.getElementById("cancel-edit").onclick = () => renderDetailView(r);
+}
+
+async function refreshGoogleInfo(r) {
+  if (!state.placesService) {
+    toast("Mappa non ancora pronta, riprova fra un attimo.");
+    return;
+  }
+  const findFields = ["place_id", "name", "formatted_address", "geometry", "rating", "user_ratings_total"];
+  const onResult = async (place) => {
+    const loc = place.geometry?.location;
+    const updates = {
+      placeId: place.place_id,
+      rating: place.rating ?? null,
+      userRatingsTotal: place.user_ratings_total ?? null,
+    };
+    if (loc && (r.lat == null || r.lng == null)) {
+      updates.lat = loc.lat();
+      updates.lng = loc.lng();
+    }
+    try {
+      await updateRestaurant(r.id, updates);
+      toast("Info Google aggiornate");
+      await loadRestaurants();
+      const updated = state.restaurants.find(x => x.id === r.id);
+      if (updated) {
+        state.currentDetailRestaurant = updated;
+        renderDetailView(updated);
+      }
+    } catch (e) {
+      console.error(e);
+      toast("Errore: " + e.message);
+    }
+  };
+  if (r.placeId) {
+    state.placesService.getDetails({ placeId: r.placeId, fields: findFields }, (place, status) => {
+      if (status !== google.maps.places.PlacesServiceStatus.OK || !place) {
+        toast("Nessun risultato da Google Maps.");
+        return;
+      }
+      onResult(place);
+    });
+  } else {
+    // Cerca per nome+indirizzo
+    const queryText = `${r.name} ${r.address || ""}`.trim();
+    state.placesService.findPlaceFromQuery(
+      { query: queryText, fields: findFields },
+      (results, status) => {
+        if (status !== google.maps.places.PlacesServiceStatus.OK || !results || results.length === 0) {
+          toast("Nessun risultato su Google Maps.");
+          return;
+        }
+        onResult(results[0]);
+      }
+    );
+  }
 }
 
 // --- Render: map ---------------------------------------------------
-function initMap() {
+async function initMap() {
   state.map = new google.maps.Map(document.getElementById("map"), {
     center: MAP_DEFAULT_CENTER,
     zoom: MAP_DEFAULT_ZOOM,
     mapTypeControl: false,
     streetViewControl: false,
     fullscreenControl: true,
+    gestureHandling: "greedy", // permette pan/zoom con una dita su mobile
+    clickableIcons: false,     // evita interferenze con click sui POI di Google
   });
   state.infoWindow = new google.maps.InfoWindow();
   // Places services for Add view
   state.placesService = new google.maps.places.PlacesService(state.map);
   state.autocompleteService = new google.maps.places.AutocompleteService();
+
+  // Carica MarkerClusterer da CDN (non blocca: appena pronta, riapplica i marker)
+  loadClusterer().then(() => {
+    if (state.markers.length > 0) renderMapMarkers();
+  }).catch(err => console.warn("Clusterer non caricabile:", err));
+
   renderMapMarkers();
 }
 
+async function loadClusterer() {
+  if (state.MarkerClustererClass) return state.MarkerClustererClass;
+  const mod = await import("https://cdn.jsdelivr.net/npm/@googlemaps/markerclusterer@2.5.3/+esm");
+  state.MarkerClustererClass = mod.MarkerClusterer;
+  return state.MarkerClustererClass;
+}
+
 function clearMarkers() {
+  if (state.markerClusterer) {
+    state.markerClusterer.clearMarkers();
+    state.markerClusterer = null;
+  }
   state.markers.forEach(m => m.setMap(null));
   state.markers = [];
 }
@@ -270,12 +427,12 @@ function renderMapMarkers() {
   if (!state.map) return;
   clearMarkers();
   const bounds = new google.maps.LatLngBounds();
+  const markers = [];
   let count = 0;
   for (const r of state.restaurants) {
     if (r.lat == null || r.lng == null) continue;
     const marker = new google.maps.Marker({
       position: { lat: r.lat, lng: r.lng },
-      map: state.map,
       title: r.name,
       icon: {
         path: google.maps.SymbolPath.CIRCLE,
@@ -287,10 +444,12 @@ function renderMapMarkers() {
       },
     });
     marker.addListener("click", () => {
+      const ratingLine = r.rating ? `<div class="iw-rating">⭐ ${Number(r.rating).toFixed(1)}${r.userRatingsTotal ? ` (${r.userRatingsTotal})` : ""}</div>` : "";
       const html = `
         <div class="info-window">
           <h4>${iconEmoji(r.icon)} ${escapeHtml(r.name)}</h4>
           <div class="iw-addr">${escapeHtml(r.address || "")}</div>
+          ${ratingLine}
           <div class="iw-tags">
             ${(r.tags || []).slice(0, 5).map(t => `<span class="tag-pill" style="background:${t.color || '#64803f'}">${escapeHtml(t.name)}</span>`).join("")}
           </div>
@@ -299,9 +458,16 @@ function renderMapMarkers() {
       state.infoWindow.setContent(html);
       state.infoWindow.open(state.map, marker);
     });
-    state.markers.push(marker);
+    markers.push(marker);
     bounds.extend({ lat: r.lat, lng: r.lng });
     count++;
+  }
+  state.markers = markers;
+  // Se MarkerClusterer è disponibile, usalo (raggruppa marker e riduce drasticamente il lag su mobile)
+  if (state.MarkerClustererClass) {
+    state.markerClusterer = new state.MarkerClustererClass({ map: state.map, markers });
+  } else {
+    markers.forEach(m => m.setMap(state.map));
   }
   if (count > 0 && !state.mapHasBeenFit) {
     state.map.fitBounds(bounds, 40);
@@ -470,6 +636,8 @@ async function saveConfirmedPlace() {
     icon,
     tags,
     note: confirmNoteInput.value.trim(),
+    rating: p.rating ?? null,
+    userRatingsTotal: p.user_ratings_total ?? null,
     source: "google-places"
   };
   try {
