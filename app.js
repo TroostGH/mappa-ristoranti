@@ -18,6 +18,7 @@ const state = {
   restaurants: [],         // tutti i ristoranti caricati da Firestore
   filteredTags: new Set(), // tag attivi nei filtri
   searchText: "",          // testo nel filtro di ricerca
+  sortBy: localStorage.getItem("sortBy") || "recent", // "recent" | "oldest" | "name"
   map: null,
   markers: [],
   placesService: null,
@@ -30,6 +31,7 @@ const state = {
 const $ = (sel) => document.querySelector(sel);
 const listContainer = $("#restaurant-list");
 const listSearch = $("#list-search");
+const sortByEl = $("#sort-by");
 const tagFiltersEl = $("#tag-filters");
 const counterEl = $("#list-counter");
 const placesSearchInput = $("#places-search");
@@ -98,8 +100,9 @@ function uniqueTagsFrom(restaurants) {
 // --- Firestore ops -------------------------------------------------
 async function loadRestaurants() {
   try {
-    const snap = await getDocs(query(RESTAURANTS, orderBy("name")));
+    const snap = await getDocs(RESTAURANTS);
     state.restaurants = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+    sortRestaurants();
     counterEl.textContent = `${state.restaurants.length} ristoranti`;
     renderTagFilters();
     renderList();
@@ -108,6 +111,25 @@ async function loadRestaurants() {
     console.error(e);
     counterEl.textContent = "Errore di caricamento — controlla la configurazione Firebase.";
   }
+}
+
+function getCreatedAtMs(r) {
+  // Supporta Timestamp Firestore (con .toMillis()) e Date / oggetto seriale
+  if (!r.createdAt) return 0;
+  if (typeof r.createdAt.toMillis === "function") return r.createdAt.toMillis();
+  if (r.createdAt.seconds != null) return r.createdAt.seconds * 1000;
+  const t = new Date(r.createdAt).getTime();
+  return isNaN(t) ? 0 : t;
+}
+
+function sortRestaurants() {
+  const mode = state.sortBy;
+  state.restaurants.sort((a, b) => {
+    if (mode === "name") return a.name.localeCompare(b.name, "it");
+    const tA = getCreatedAtMs(a);
+    const tB = getCreatedAtMs(b);
+    return mode === "oldest" ? tA - tB : tB - tA;
+  });
 }
 
 async function saveRestaurant(data) {
@@ -401,6 +423,16 @@ function switchView(name) {
 // --- Wire up events ------------------------------------------------
 document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => switchView(t.dataset.view)));
 listSearch.addEventListener("input", (e) => { state.searchText = e.target.value; renderList(); });
+// Sync sort dropdown col valore in stato (caricato da localStorage)
+if (sortByEl) {
+  sortByEl.value = state.sortBy;
+  sortByEl.addEventListener("change", (e) => {
+    state.sortBy = e.target.value;
+    localStorage.setItem("sortBy", state.sortBy);
+    sortRestaurants();
+    renderList();
+  });
+}
 $("#search-btn").addEventListener("click", performPlacesSearch);
 placesSearchInput.addEventListener("keydown", e => { if (e.key === "Enter") performPlacesSearch(); });
 $("#confirm-save").addEventListener("click", saveConfirmedPlace);

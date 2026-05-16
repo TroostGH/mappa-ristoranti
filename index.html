@@ -5,7 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mappa Ristoranti Vegan</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='80' font-size='80'%3E%F0%9F%8C%B1%3C/text%3E%3C/svg%3E" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#64803f" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Mappa Ristoranti" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="icon" href="icons/icon-192.png" />
 </head>
 <body>
   <header>
@@ -24,7 +30,14 @@
     <!-- LIST VIEW -->
     <section id="view-list" class="view active">
       <div class="toolbar">
-        <input type="search" id="list-search" placeholder="🔎 Filtra per nome, città o tag…" />
+        <div class="search-row">
+          <input type="search" id="list-search" placeholder="🔎 Filtra per nome, città o tag…" />
+          <select id="sort-by" title="Ordina per">
+            <option value="recent">🕒 Più recenti</option>
+            <option value="oldest">📅 Più vecchi</option>
+            <option value="name">🔤 Nome A→Z</option>
+          </select>
+        </div>
         <div class="tag-filters" id="tag-filters"></div>
         <div class="counter" id="list-counter">Caricamento…</div>
       </div>
@@ -78,6 +91,9 @@
   <script type="module" src="config.js"></script>
   <script type="module" src="app.js"></script>
 
+  <!-- Bottone "Installa app" che appare quando il browser supporta l'installazione PWA -->
+  <button id="install-btn" class="install-btn hidden">📲 Installa app</button>
+
   <!-- Google Maps JS API: la chiave viene letta da config.js e iniettata dinamicamente -->
   <script>
     window.__loadGoogleMaps = function (apiKey) {
@@ -87,6 +103,31 @@
       s.defer = true;
       document.head.appendChild(s);
     };
+
+    // Service worker (richiesto per PWA install)
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch(err => console.warn('SW reg failed', err));
+      });
+    }
+
+    // Cattura prompt di installazione e mostra il bottone custom
+    let deferredInstallPrompt = null;
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredInstallPrompt = e;
+      document.getElementById('install-btn')?.classList.remove('hidden');
+    });
+    document.getElementById('install-btn')?.addEventListener('click', async () => {
+      if (!deferredInstallPrompt) return;
+      deferredInstallPrompt.prompt();
+      await deferredInstallPrompt.userChoice;
+      deferredInstallPrompt = null;
+      document.getElementById('install-btn')?.classList.add('hidden');
+    });
+    window.addEventListener('appinstalled', () => {
+      document.getElementById('install-btn')?.classList.add('hidden');
+    });
   </script>
 </body>
 </html>
