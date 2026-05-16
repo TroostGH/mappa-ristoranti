@@ -27,7 +27,7 @@ export const firebaseConfig = {
   appId: "1:1070941645991:web:3f4a29883f312db7e27f82"
 };
 
-export const GOOGLE_MAPS_API_KEY = "AIzaSyDwalCYtECFEep_wCMhFzYReukfWd0FwP4";
+export const GOOGLE_MAPS_API_KEY = "AIzaSyDwaICYtECFEep_wCMhFzYReukfWd0FwP4";
 
 // Centro iniziale della mappa (Italia)
 export const MAP_DEFAULT_CENTER = { lat: 42.5, lng: 12.5 };
