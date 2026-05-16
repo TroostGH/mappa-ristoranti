@@ -203,7 +203,6 @@ function renderList() {
     const card = document.createElement("div");
     card.className = "card";
     const tagsHtml = (r.tags || []).map(t => `<span class="tag-pill" style="background:${t.color || '#64803f'}">${escapeHtml(t.name)}</span>`).join("");
-    const tagsCount = (r.tags || []).length;
     const ratingHtml = r.rating
       ? `<div class="card-rating">⭐ ${Number(r.rating).toFixed(1)}${r.userRatingsTotal ? ` <span class="rating-count">(${r.userRatingsTotal})</span>` : ""}</div>`
       : "";
@@ -214,24 +213,12 @@ function renderList() {
       </div>
       <div class="card-address">${escapeHtml(r.address || "")}</div>
       ${ratingHtml}
-      <div class="card-tags-wrap">
-        <div class="card-tags collapsed">${tagsHtml}</div>
-        ${tagsCount > 0 ? `<button class="tags-toggle" aria-label="Espandi tag">▾</button>` : ""}
-      </div>
+      <div class="card-tags">${tagsHtml}</div>
       <div class="card-actions">
         <a class="maps-link" href="${navLinkFor(r)}" target="_blank" rel="noopener">🧭 Indicazioni</a>
         <button data-id="${r.id}" class="btn-detail">Dettagli</button>
       </div>
     `;
-    const toggleBtn = card.querySelector(".tags-toggle");
-    if (toggleBtn) {
-      toggleBtn.onclick = (e) => {
-        e.stopPropagation();
-        const tagsEl = card.querySelector(".card-tags");
-        const expanded = tagsEl.classList.toggle("collapsed") === false;
-        toggleBtn.textContent = expanded ? "▴" : "▾";
-      };
-    }
     card.querySelector(".btn-detail").onclick = (e) => { e.stopPropagation(); openDetail(r); };
     card.onclick = () => openDetail(r);
     listContainer.appendChild(card);
@@ -669,6 +656,16 @@ function switchView(name) {
 // --- Wire up events ------------------------------------------------
 document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => switchView(t.dataset.view)));
 listSearch.addEventListener("input", (e) => { state.searchText = e.target.value; renderList(); });
+
+// Toggle espandi/comprimi tag filtri in cima
+const tagFiltersToggleBtn = document.getElementById("tag-filters-toggle");
+if (tagFiltersToggleBtn) {
+  tagFiltersToggleBtn.addEventListener("click", () => {
+    const collapsed = tagFiltersEl.classList.toggle("collapsed");
+    tagFiltersToggleBtn.textContent = collapsed ? "▾" : "▴";
+    tagFiltersToggleBtn.setAttribute("aria-label", collapsed ? "Espandi tag" : "Comprimi tag");
+  });
+}
 // Sync sort dropdown col valore in stato (caricato da localStorage)
 if (sortByEl) {
   sortByEl.value = state.sortBy;

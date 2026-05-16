@@ -21,6 +21,7 @@ html, body {
   background: var(--bg);
   color: var(--ink);
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 header {
@@ -136,12 +137,37 @@ main { padding: 0; }
   font-family: inherit;
 }
 .install-btn:hover { background: var(--accent-dark); }
+.tag-filters-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin-top: 10px;
+}
 .tag-filters {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-top: 10px;
+  flex: 1;
+  min-width: 0;
 }
+.tag-filters.collapsed {
+  max-height: 28px;
+  overflow: hidden;
+}
+.tag-filters-toggle {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  height: 28px;
+  min-width: 32px;
+  padding: 0 8px;
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.tag-filters-toggle:hover { background: var(--bg); color: var(--ink); }
 .tag-filter {
   font-size: 12px;
   padding: 4px 10px;
@@ -208,39 +234,6 @@ main { padding: 0; }
   gap: 5px;
   align-items: center;
 }
-.card-tags-wrap {
-  display: flex;
-  align-items: flex-start;
-  gap: 4px;
-}
-.card-tags-wrap .card-tags {
-  flex: 1;
-  min-width: 0;
-}
-.card-tags-wrap .card-tags.collapsed {
-  flex-wrap: nowrap;
-  overflow: hidden;
-  mask-image: linear-gradient(to right, #000 85%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, #000 85%, transparent 100%);
-}
-.card-tags-wrap .card-tags.collapsed .tag-pill {
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.tags-toggle {
-  background: transparent;
-  border: 1px solid var(--border);
-  border-radius: 50%;
-  width: 22px;
-  height: 22px;
-  padding: 0;
-  font-size: 12px;
-  cursor: pointer;
-  color: var(--muted);
-  flex-shrink: 0;
-  line-height: 1;
-}
-.tags-toggle:hover { background: var(--bg); color: var(--ink); }
 
 .card-rating {
   font-size: 13px;
