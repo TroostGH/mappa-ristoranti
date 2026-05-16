@@ -48,6 +48,10 @@
 
     <!-- MAP VIEW -->
     <section id="view-map" class="view">
+      <div class="map-search-overlay">
+        <input type="text" id="map-search" placeholder="🔎 Cerca una città…" autocomplete="off" />
+        <div id="map-search-results" class="map-search-results hidden"></div>
+      </div>
       <div id="map"></div>
     </section>
 
@@ -58,8 +62,8 @@
         <p class="hint">Cerca il nome del ristorante: i risultati arrivano direttamente da Google Maps. Clicca sul risultato giusto per confermarlo.</p>
         <div class="search-box">
           <input type="text" id="places-search" placeholder="Es. Soul Kitchen Milano" autocomplete="off" />
-          <button id="search-btn">Cerca</button>
         </div>
+        <div id="places-status" class="places-status hidden"></div>
         <div id="places-results" class="places-results"></div>
 
         <div id="confirm-panel" class="confirm-panel hidden">

@@ -36,6 +36,9 @@ const tagFiltersEl = $("#tag-filters");
 const counterEl = $("#list-counter");
 const placesSearchInput = $("#places-search");
 const placesResultsEl = $("#places-results");
+const placesStatusEl = $("#places-status");
+const mapSearchInput = $("#map-search");
+const mapSearchResultsEl = $("#map-search-results");
 const confirmPanel = $("#confirm-panel");
 const confirmSummary = $("#confirm-summary");
 const confirmTagsInput = $("#confirm-tags");
@@ -309,19 +312,30 @@ function renderMapMarkers() {
 // --- Add view: search & confirm ------------------------------------
 function performPlacesSearch() {
   const text = placesSearchInput.value.trim();
-  if (!text) return;
-  if (!state.autocompleteService) {
-    toast("Mappa non ancora pronta, riprova fra un attimo.");
+  if (!text) {
+    placesResultsEl.innerHTML = "";
+    placesStatusEl.classList.add("hidden");
     return;
   }
-  placesResultsEl.innerHTML = `<div style="padding:14px;color:#888;">Ricerca in corso…</div>`;
+  if (!state.autocompleteService) {
+    placesStatusEl.textContent = "Mappa non ancora pronta, riprova fra un attimo…";
+    placesStatusEl.classList.remove("hidden");
+    return;
+  }
+  placesStatusEl.textContent = "Ricerca in corso…";
+  placesStatusEl.classList.remove("hidden");
   state.autocompleteService.getPlacePredictions(
     { input: text, types: ["establishment"] },
     (preds, status) => {
-      if (status !== google.maps.places.PlacesServiceStatus.OK || !preds) {
-        placesResultsEl.innerHTML = `<div style="padding:14px;color:#888;">Nessun risultato.</div>`;
+      // Se il testo è cambiato nel frattempo, ignora questa risposta
+      if (placesSearchInput.value.trim() !== text) return;
+      if (status !== google.maps.places.PlacesServiceStatus.OK || !preds || preds.length === 0) {
+        placesResultsEl.innerHTML = "";
+        placesStatusEl.textContent = "Nessun risultato.";
+        placesStatusEl.classList.remove("hidden");
         return;
       }
+      placesStatusEl.classList.add("hidden");
       placesResultsEl.innerHTML = "";
       for (const p of preds) {
         const div = document.createElement("div");
@@ -333,6 +347,70 @@ function performPlacesSearch() {
         div.onclick = () => loadPlaceDetails(p.place_id);
         placesResultsEl.appendChild(div);
       }
+    }
+  );
+}
+
+// debounce util
+function debounce(fn, ms) {
+  let t = null;
+  return function(...args) {
+    clearTimeout(t);
+    t = setTimeout(() => fn.apply(this, args), ms);
+  };
+}
+
+// --- Map view: city search ----------------------------------------
+function performMapSearch() {
+  const text = mapSearchInput.value.trim();
+  if (!text) {
+    mapSearchResultsEl.innerHTML = "";
+    mapSearchResultsEl.classList.add("hidden");
+    return;
+  }
+  if (!state.autocompleteService) return;
+  state.autocompleteService.getPlacePredictions(
+    { input: text, types: ["(cities)"] },
+    (preds, status) => {
+      if (mapSearchInput.value.trim() !== text) return;
+      if (status !== google.maps.places.PlacesServiceStatus.OK || !preds || preds.length === 0) {
+        mapSearchResultsEl.innerHTML = `<div class="map-search-empty">Nessuna città trovata</div>`;
+        mapSearchResultsEl.classList.remove("hidden");
+        return;
+      }
+      mapSearchResultsEl.innerHTML = "";
+      for (const p of preds) {
+        const div = document.createElement("div");
+        div.className = "map-search-result";
+        div.innerHTML = `
+          <div class="ms-name">📍 ${escapeHtml(p.structured_formatting.main_text)}</div>
+          <div class="ms-addr">${escapeHtml(p.structured_formatting.secondary_text || "")}</div>
+        `;
+        div.onclick = () => zoomToCity(p.place_id, p.structured_formatting.main_text);
+        mapSearchResultsEl.appendChild(div);
+      }
+      mapSearchResultsEl.classList.remove("hidden");
+    }
+  );
+}
+
+function zoomToCity(placeId, cityName) {
+  if (!state.placesService) return;
+  state.placesService.getDetails(
+    { placeId, fields: ["geometry", "name"] },
+    (place, status) => {
+      if (status !== google.maps.places.PlacesServiceStatus.OK || !place?.geometry) {
+        toast("Impossibile zoomare sulla città.");
+        return;
+      }
+      if (place.geometry.viewport) {
+        state.map.fitBounds(place.geometry.viewport, 0);
+      } else if (place.geometry.location) {
+        state.map.setCenter(place.geometry.location);
+        state.map.setZoom(13);
+      }
+      mapSearchInput.value = cityName || place.name || "";
+      mapSearchResultsEl.classList.add("hidden");
     }
   );
 }
@@ -433,8 +511,22 @@ if (sortByEl) {
     renderList();
   });
 }
-$("#search-btn").addEventListener("click", performPlacesSearch);
-placesSearchInput.addEventListener("keydown", e => { if (e.key === "Enter") performPlacesSearch(); });
+// Auto-search mentre l'utente scrive (debounce 300ms)
+const debouncedPlacesSearch = debounce(performPlacesSearch, 300);
+placesSearchInput.addEventListener("input", debouncedPlacesSearch);
+
+// Ricerca città nella mappa (debounce 250ms)
+const debouncedMapSearch = debounce(performMapSearch, 250);
+mapSearchInput?.addEventListener("input", debouncedMapSearch);
+mapSearchInput?.addEventListener("focus", () => {
+  if (mapSearchResultsEl.children.length > 0) mapSearchResultsEl.classList.remove("hidden");
+});
+// Click fuori dal box ricerca mappa → chiudi i risultati
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".map-search-overlay")) {
+    mapSearchResultsEl?.classList.add("hidden");
+  }
+});
 $("#confirm-save").addEventListener("click", saveConfirmedPlace);
 $("#confirm-cancel").addEventListener("click", () => { confirmPanel.classList.add("hidden"); state.pendingPlace = null; });
 $("#modal-close").addEventListener("click", () => detailModal.classList.add("hidden"));
