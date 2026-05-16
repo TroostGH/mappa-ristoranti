@@ -2,7 +2,7 @@
 // Strategia: network-first per tutto (così l'app mostra sempre i dati Firestore freschi),
 // con fallback alla cache solo se sei offline.
 
-const CACHE_NAME = "mappa-ristoranti-v9";
+const CACHE_NAME = "mappa-ristoranti-v10";
 const APP_SHELL = [
   "./",
   "./index.html",

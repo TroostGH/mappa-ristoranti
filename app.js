@@ -215,7 +215,7 @@ function renderList() {
       ${ratingHtml}
       <div class="card-tags">${tagsHtml}</div>
       <div class="card-actions">
-        <a class="maps-link" href="${navLinkFor(r)}" target="_blank" rel="noopener">🧭 Indicazioni</a>
+        <a class="maps-link" href="${mapsLinkFor(r)}" target="_blank" rel="noopener">📍 Apri in Maps</a>
         <button data-id="${r.id}" class="btn-detail">Dettagli</button>
       </div>
     `;
@@ -440,7 +440,7 @@ function renderMapMarkers() {
           <div class="iw-tags">
             ${(r.tags || []).slice(0, 5).map(t => `<span class="tag-pill" style="background:${t.color || '#64803f'}">${escapeHtml(t.name)}</span>`).join("")}
           </div>
-          <a href="${navLinkFor(r)}" target="_blank" rel="noopener">🧭 Navigazione</a>
+          <a href="${mapsLinkFor(r)}" target="_blank" rel="noopener">📍 Apri in Maps</a>
         </div>`;
       state.infoWindow.setContent(html);
       state.infoWindow.open(state.map, marker);
