@@ -410,6 +410,37 @@ function clearMarkers() {
   state.markers = [];
 }
 
+// Pin SVG ad alta visibilità: goccia verde con bordo bianco, ombra e dot interno.
+// Disegnato grande (size 44x56) così resta nitido e ben distinguibile dalle icone POI di Google.
+let _pinIconCache = null;
+function buildPinIcon() {
+  if (_pinIconCache) return _pinIconCache;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="44" height="56" viewBox="0 0 44 56">
+    <defs>
+      <filter id="ds" x="-50%" y="-50%" width="200%" height="200%">
+        <feDropShadow dx="0" dy="2" stdDeviation="1.8" flood-color="#000" flood-opacity="0.4"/>
+      </filter>
+      <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#7a9a4d"/>
+        <stop offset="1" stop-color="#4a6328"/>
+      </linearGradient>
+    </defs>
+    <path filter="url(#ds)" fill="url(#g)" stroke="#ffffff" stroke-width="3"
+      d="M22 3 C11.5 3 3 11.3 3 21.6 c0 14.2 19 31.4 19 31.4 s19 -17.2 19 -31.4 C41 11.3 32.5 3 22 3 z"/>
+    <circle cx="22" cy="21" r="7.5" fill="#ffffff"/>
+    <circle cx="22" cy="21" r="3.5" fill="#4a6328"/>
+  </svg>`;
+  const url = "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg);
+  _pinIconCache = {
+    url,
+    scaledSize: new google.maps.Size(44, 56),
+    size: new google.maps.Size(44, 56),
+    anchor: new google.maps.Point(22, 54),
+    labelOrigin: new google.maps.Point(22, 21),
+  };
+  return _pinIconCache;
+}
+
 function renderMapMarkers() {
   if (!state.map) return;
   clearMarkers();
@@ -421,14 +452,9 @@ function renderMapMarkers() {
     const marker = new google.maps.Marker({
       position: { lat: r.lat, lng: r.lng },
       title: r.name,
-      icon: {
-        path: google.maps.SymbolPath.CIRCLE,
-        fillColor: "#f4c20d",
-        fillOpacity: 1,
-        strokeColor: "#a07d00",
-        strokeWeight: 2,
-        scale: 9,
-      },
+      icon: buildPinIcon(),
+      zIndex: 1000,
+      optimized: false,
     });
     marker.addListener("click", () => {
       const ratingLine = r.rating ? `<div class="iw-rating">⭐ ${Number(r.rating).toFixed(1)}${r.userRatingsTotal ? ` (${r.userRatingsTotal})` : ""}</div>` : "";
