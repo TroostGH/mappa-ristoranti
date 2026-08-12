@@ -74,6 +74,30 @@ header {
   border-bottom-color: var(--accent);
 }
 
+/* Tab "Aggiungi": pillola verde per renderlo l'azione più visibile */
+.tab-add {
+  margin-left: auto;
+  margin-bottom: 8px;
+  padding: 8px 18px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 999px;
+  border-bottom: 0;
+  box-shadow: 0 2px 6px rgba(100, 128, 63, 0.35);
+  align-self: center;
+}
+.tab-add:hover {
+  background: var(--accent-dark);
+  color: #fff;
+}
+.tab-add.active {
+  background: var(--accent-dark);
+  color: #fff;
+  border-bottom-color: transparent;
+  box-shadow: 0 0 0 3px rgba(100, 128, 63, 0.25);
+}
+
 main { padding: 0; }
 
 .view { display: none; }
@@ -364,6 +388,38 @@ main { padding: 0; }
 .map-search-empty { padding: 12px 14px; color: var(--muted); font-size: 13px; }
 
 #view-map { position: relative; }
+
+/* Bottone "la mia posizione": overlay in basso a destra sulla mappa.
+   Su desktop sta sopra i controlli zoom di Google, su mobile (dove non ci sono) più in basso. */
+.map-locate-btn {
+  position: absolute;
+  right: 16px;
+  bottom: 150px;
+  z-index: 30;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #5f6368;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: color 0.15s, background 0.15s;
+}
+.map-locate-btn:hover { color: var(--accent-dark); }
+.map-locate-btn.active { color: #1a73e8; }
+.map-locate-btn.loading {
+  color: var(--accent);
+  animation: locate-pulse 1s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes locate-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
 
 .places-results {
   margin-top: 20px;
@@ -658,4 +714,6 @@ main { padding: 0; }
   header { padding: 10px 14px 0 14px; }
   .brand h1 { font-size: 18px; }
   .tab { padding: 8px 10px; font-size: 13px; }
+  .tab-add { padding: 8px 14px; margin-bottom: 6px; }
+  .map-locate-btn { bottom: 92px; right: 14px; }
 }

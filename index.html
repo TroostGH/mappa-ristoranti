@@ -24,7 +24,7 @@
     <nav class="tabs">
       <button class="tab active" data-view="list">📋 Elenco</button>
       <button class="tab" data-view="map">🗺️ Mappa</button>
-      <button class="tab" data-view="add">➕ Aggiungi</button>
+      <button class="tab tab-add" data-view="add">➕ Aggiungi</button>
     </nav>
   </header>
 
@@ -55,6 +55,12 @@
         <input type="text" id="map-search" placeholder="🔎 Cerca una città…" autocomplete="off" />
         <div id="map-search-results" class="map-search-results hidden"></div>
       </div>
+      <button id="map-locate" class="map-locate-btn" type="button" title="Vai alla mia posizione" aria-label="Vai alla mia posizione">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path fill="currentColor" d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+          <path fill="currentColor" d="M13 2h-2v2.06A8.01 8.01 0 0 0 4.06 11H2v2h2.06A8.01 8.01 0 0 0 11 19.94V22h2v-2.06A8.01 8.01 0 0 0 19.94 13H22v-2h-2.06A8.01 8.01 0 0 0 13 4.06V2zm-1 4a6 6 0 1 1 0 12 6 6 0 0 1 0-12z"/>
+        </svg>
+      </button>
       <div id="map"></div>
     </section>
 

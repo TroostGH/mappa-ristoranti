@@ -28,6 +28,8 @@ const state = {
   pendingPlace: null,      // place selezionato pronto da salvare
   infoWindow: null,
   currentDetailRestaurant: null, // ristorante aperto nel modal
+  userMarker: null,        // pallino blu della posizione utente
+  userAccuracyCircle: null // cerchio di precisione attorno al pallino
 };
 
 // --- DOM refs ------------------------------------------------------
@@ -41,6 +43,7 @@ const placesSearchInput = $("#places-search");
 const placesResultsEl = $("#places-results");
 const placesStatusEl = $("#places-status");
 const mapSearchInput = $("#map-search");
+const mapLocateBtn = $("#map-locate");
 const mapSearchResultsEl = $("#map-search-results");
 const confirmPanel = $("#confirm-panel");
 const confirmSummary = $("#confirm-summary");
@@ -386,12 +389,87 @@ async function initMap() {
   state.placesService = new google.maps.places.PlacesService(state.map);
   state.autocompleteService = new google.maps.places.AutocompleteService();
 
+
   // Carica MarkerClusterer da CDN (non blocca: appena pronta, riapplica i marker)
   loadClusterer().then(() => {
     if (state.markers.length > 0) renderMapMarkers();
   }).catch(err => console.warn("Clusterer non caricabile:", err));
 
   renderMapMarkers();
+}
+
+// --- Map view: "la mia posizione" ---------------------------------
+// Il bottone (overlay in basso a destra sulla mappa) chiede la posizione al
+// dispositivo — il browser mostra il popup di autorizzazione — e zooma sulla zona.
+function locateMe() {
+  if (!state.map) {
+    toast("Mappa non ancora pronta, riprova fra un attimo.");
+    return;
+  }
+  if (!navigator.geolocation) {
+    toast("Geolocalizzazione non supportata dal browser.");
+    return;
+  }
+  if (!window.isSecureContext) {
+    toast("La posizione funziona solo su HTTPS (o localhost).");
+    return;
+  }
+  const btn = mapLocateBtn;
+  btn?.classList.add("loading");
+  navigator.geolocation.getCurrentPosition(
+    (pos) => {
+      btn?.classList.remove("loading");
+      btn?.classList.add("active");
+      const here = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+      showUserPosition(here, pos.coords.accuracy);
+      state.map.panTo(here);
+      // Zoom più stretto se la posizione è precisa, più largo se è approssimativa
+      const acc = pos.coords.accuracy || 0;
+      state.map.setZoom(acc > 1000 ? 13 : acc > 200 ? 14 : 16);
+    },
+    (err) => {
+      btn?.classList.remove("loading");
+      if (err.code === err.PERMISSION_DENIED) {
+        toast("Permesso posizione negato: abilitalo nelle impostazioni del browser.");
+      } else if (err.code === err.TIMEOUT) {
+        toast("Posizione non trovata, riprova.");
+      } else {
+        toast("Impossibile ottenere la posizione.");
+      }
+    },
+    { enableHighAccuracy: true, timeout: 10000, maximumAge: 30000 }
+  );
+}
+
+function showUserPosition(pos, accuracy) {
+  if (!state.userMarker) {
+    state.userMarker = new google.maps.Marker({
+      map: state.map,
+      title: "Sei qui",
+      zIndex: 2000,
+      icon: {
+        path: google.maps.SymbolPath.CIRCLE,
+        scale: 8,
+        fillColor: "#1a73e8",
+        fillOpacity: 1,
+        strokeColor: "#ffffff",
+        strokeWeight: 3,
+      },
+    });
+    state.userAccuracyCircle = new google.maps.Circle({
+      map: state.map,
+      strokeColor: "#1a73e8",
+      strokeOpacity: 0.35,
+      strokeWeight: 1,
+      fillColor: "#1a73e8",
+      fillOpacity: 0.12,
+      clickable: false,
+      zIndex: 1500,
+    });
+  }
+  state.userMarker.setPosition(pos);
+  state.userAccuracyCircle.setCenter(pos);
+  state.userAccuracyCircle.setRadius(Math.max(accuracy || 0, 15));
 }
 
 async function loadClusterer() {
@@ -435,7 +513,7 @@ function buildPinIcon() {
     url,
     scaledSize: new google.maps.Size(44, 56),
     size: new google.maps.Size(44, 56),
-    anchor: new google.maps.Point(22, 54),
+    anchor: new google.maps.Point(22, 54), // punta del pin in basso
     labelOrigin: new google.maps.Point(22, 21),
   };
   return _pinIconCache;
@@ -712,6 +790,8 @@ mapSearchInput?.addEventListener("input", debouncedMapSearch);
 mapSearchInput?.addEventListener("focus", () => {
   if (mapSearchResultsEl.children.length > 0) mapSearchResultsEl.classList.remove("hidden");
 });
+// Bottone "la mia posizione" sulla mappa
+mapLocateBtn?.addEventListener("click", locateMe);
 // Click fuori dal box ricerca mappa → chiudi i risultati
 document.addEventListener("click", (e) => {
   if (!e.target.closest(".map-search-overlay")) {
