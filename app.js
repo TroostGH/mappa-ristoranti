@@ -28,6 +28,7 @@ const state = {
   pendingPlace: null,      // place selezionato pronto da salvare
   infoWindow: null,
   currentDetailRestaurant: null, // ristorante aperto nel modal
+  locating: false,         // richiesta di posizione in corso
   userMarker: null,        // pallino blu della posizione utente
   userAccuracyCircle: null // cerchio di precisione attorno al pallino
 };
@@ -414,31 +415,78 @@ function locateMe() {
     toast("La posizione funziona solo su HTTPS (o localhost).");
     return;
   }
+  if (state.locating) return; // già in corso: evita richieste doppie
   const btn = mapLocateBtn;
+  state.locating = true;
   btn?.classList.add("loading");
-  navigator.geolocation.getCurrentPosition(
-    (pos) => {
-      btn?.classList.remove("loading");
-      btn?.classList.add("active");
-      const here = { lat: pos.coords.latitude, lng: pos.coords.longitude };
-      showUserPosition(here, pos.coords.accuracy);
-      state.map.panTo(here);
-      // Zoom più stretto se la posizione è precisa, più largo se è approssimativa
-      const acc = pos.coords.accuracy || 0;
-      state.map.setZoom(acc > 1000 ? 13 : acc > 200 ? 14 : 16);
-    },
-    (err) => {
-      btn?.classList.remove("loading");
-      if (err.code === err.PERMISSION_DENIED) {
-        toast("Permesso posizione negato: abilitalo nelle impostazioni del browser.");
-      } else if (err.code === err.TIMEOUT) {
-        toast("Posizione non trovata, riprova.");
-      } else {
-        toast("Impossibile ottenere la posizione.");
-      }
-    },
-    { enableHighAccuracy: true, timeout: 10000, maximumAge: 30000 }
-  );
+  btn?.classList.remove("active");
+
+  // Il fix GPS ad alta precisione può richiedere parecchi secondi (o non arrivare
+  // mai in interni). Quindi: prima un fix rapido via rete/Wi-Fi, e in parallelo
+  // il GPS preciso che affina la posizione appena disponibile.
+  let best = null;
+  let watchId = null;
+  let done = false;
+  let softTimer = null;
+  let hardTimer = null;
+  let coarseFailed = false;
+  let preciseFailed = false;
+
+  const finish = (errMsg) => {
+    if (done) return;
+    done = true;
+    state.locating = false;
+    if (watchId !== null) navigator.geolocation.clearWatch(watchId);
+    clearTimeout(softTimer);
+    clearTimeout(hardTimer);
+    btn?.classList.remove("loading");
+    if (best) btn?.classList.add("active");
+    else if (errMsg) toast(errMsg);
+  };
+
+  const usePosition = (pos) => {
+    if (done) return;
+    const acc = pos.coords.accuracy || 0;
+    // Ignora i fix chiaramente peggiori di quello che abbiamo già
+    if (best && acc > best.acc * 1.2) return;
+    best = { lat: pos.coords.latitude, lng: pos.coords.longitude, acc };
+    const here = { lat: best.lat, lng: best.lng };
+    showUserPosition(here, acc);
+    state.map.panTo(here);
+    // Zoom più stretto se la posizione è precisa, più largo se è approssimativa
+    state.map.setZoom(acc > 2000 ? 12 : acc > 500 ? 13 : acc > 150 ? 15 : 16);
+    if (acc <= 60) finish(); // abbastanza preciso: ci fermiamo qui
+  };
+
+  const onError = (source) => (err) => {
+    if (done) return;
+    if (err.code === err.PERMISSION_DENIED) {
+      finish("Permesso posizione negato: abilitalo nelle impostazioni del telefono.");
+      return;
+    }
+    // Timeout o posizione non disponibile su un canale: aspettiamo l'altro.
+    if (source === "coarse") coarseFailed = true; else preciseFailed = true;
+    if (coarseFailed && preciseFailed && !best) {
+      finish(err.code === err.POSITION_UNAVAILABLE
+        ? "Posizione non disponibile: attiva la localizzazione del telefono e riprova."
+        : "Posizione non trovata: riprova fra qualche secondo, meglio all'aperto.");
+    }
+  };
+
+  // 1) fix rapido e grossolano (rete/Wi-Fi): di solito risponde subito
+  navigator.geolocation.getCurrentPosition(usePosition, onError("coarse"), {
+    enableHighAccuracy: false, timeout: 10000, maximumAge: 120000
+  });
+  // 2) in parallelo il GPS preciso, che man mano migliora la posizione
+  watchId = navigator.geolocation.watchPosition(usePosition, onError("precise"), {
+    enableHighAccuracy: true, timeout: 30000, maximumAge: 0
+  });
+  // 3) dopo 12s teniamo il miglior risultato ottenuto…
+  softTimer = setTimeout(() => { if (best) finish(); }, 12000);
+  // …e dopo 30s ci arrendiamo
+  hardTimer = setTimeout(() => {
+    finish(best ? null : "Posizione non disponibile: controlla che la localizzazione sia attiva e riprova.");
+  }, 30000);
 }
 
 function showUserPosition(pos, accuracy) {
