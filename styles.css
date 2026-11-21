@@ -74,28 +74,33 @@ header {
   border-bottom-color: var(--accent);
 }
 
-/* Tab "Aggiungi": pillola verde per renderlo l'azione più visibile */
-.tab-add {
-  margin-left: auto;
-  margin-bottom: 8px;
-  padding: 8px 18px;
+/* Tasto flottante "Aggiungi" (FAB): in basso a destra, raggiungibile col pollice */
+.fab-add {
+  position: fixed;
+  right: calc(20px + env(safe-area-inset-right));
+  bottom: calc(22px + env(safe-area-inset-bottom));
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 0;
   background: var(--accent);
   color: #fff;
-  font-weight: 600;
-  border-radius: 999px;
-  border-bottom: 0;
-  box-shadow: 0 2px 6px rgba(100, 128, 63, 0.35);
-  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(60, 80, 35, 0.35), 0 2px 4px rgba(0,0,0,0.15);
+  z-index: 1400;
+  transition: transform 0.15s, background 0.15s, opacity 0.2s;
+  -webkit-tap-highlight-color: transparent;
 }
-.tab-add:hover {
-  background: var(--accent-dark);
-  color: #fff;
-}
-.tab-add.active {
-  background: var(--accent-dark);
-  color: #fff;
-  border-bottom-color: transparent;
-  box-shadow: 0 0 0 3px rgba(100, 128, 63, 0.25);
+.fab-add:hover { background: var(--accent-dark); }
+.fab-add:active { transform: scale(0.92); }
+/* Nascosto quando si è già nella schermata Aggiungi */
+body[data-view="add"] .fab-add {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.6);
 }
 
 main { padding: 0; }
@@ -146,8 +151,8 @@ main { padding: 0; }
 
 .install-btn {
   position: fixed;
-  bottom: 18px;
-  right: 18px;
+  bottom: calc(18px + env(safe-area-inset-bottom));
+  left: 18px;
   background: var(--accent);
   color: #fff;
   border: 0;
@@ -217,7 +222,7 @@ main { padding: 0; }
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 14px;
-  padding: 18px 20px 40px 20px;
+  padding: 18px 20px 110px 20px;
 }
 .card {
   background: var(--card);
@@ -709,11 +714,23 @@ main { padding: 0; }
 }
 
 @media (max-width: 600px) {
-  .restaurant-list { grid-template-columns: 1fr; padding: 14px; }
+  .restaurant-list { grid-template-columns: 1fr; padding: 14px 14px 110px 14px; }
   .toolbar { top: 90px; padding: 12px 14px; }
   header { padding: 10px 14px 0 14px; }
   .brand h1 { font-size: 18px; }
   .tab { padding: 8px 10px; font-size: 13px; }
-  .tab-add { padding: 8px 14px; margin-bottom: 6px; }
-  .map-locate-btn { bottom: 92px; right: 14px; }
+  .map-locate-btn { bottom: 104px; right: 14px; }
 }
+
+/* Desktop, vista Mappa: il FAB va a sinistra per non coprire i controlli zoom di Google */
+@media (min-width: 601px) {
+  body[data-view="map"] .fab-add { right: auto; left: 20px; bottom: 36px; }
+}
+
+/* Piccola animazione di ingresso della Mappa (anche dopo lo swipe) */
+#view-map.active { animation: slide-in-left 0.22s ease-out; }
+@keyframes slide-in-left {
+  from { transform: translateX(24px); opacity: 0.6; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) { #view-map.active { animation: none; } }

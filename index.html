@@ -24,7 +24,6 @@
     <nav class="tabs">
       <button class="tab active" data-view="list">📋 Elenco</button>
       <button class="tab" data-view="map">🗺️ Mappa</button>
-      <button class="tab tab-add" data-view="add">➕ Aggiungi</button>
     </nav>
   </header>
 
@@ -107,6 +106,10 @@
   <script type="module" src="app.js?v=12"></script>
 
   <!-- Bottone "Installa app" che appare quando il browser supporta l'installazione PWA -->
+  <!-- Tasto flottante "Aggiungi": in basso a destra, comodo per il pollice -->
+  <button id="fab-add" class="fab-add" type="button" aria-label="Aggiungi ristorante" title="Aggiungi ristorante">
+    <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" fill="none"/></svg>
+  </button>
   <button id="install-btn" class="install-btn hidden">📲 Installa app</button>
 
   <!-- Google Maps JS API: la chiave viene letta da config.js e iniettata dinamicamente -->

@@ -799,6 +799,8 @@ async function saveConfirmedPlace() {
 function switchView(name) {
   document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.dataset.view === name));
   document.querySelectorAll(".view").forEach(v => v.classList.toggle("active", v.id === `view-${name}`));
+  document.body.dataset.view = name;
+  if (name === "add") window.scrollTo(0, 0);
   if (name === "map" && state.map) {
     // forza ridisegno dopo show
     setTimeout(() => google.maps.event.trigger(state.map, "resize"), 50);
@@ -807,6 +809,36 @@ function switchView(name) {
 
 // --- Wire up events ------------------------------------------------
 document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => switchView(t.dataset.view)));
+document.getElementById("fab-add")?.addEventListener("click", () => switchView("add"));
+document.body.dataset.view = "list";
+
+// Swipe da destra verso sinistra sull'Elenco → passa alla Mappa.
+// Solo sull'Elenco: sulla mappa il pollice serve per spostarla.
+(function setupListSwipe() {
+  const listView = document.getElementById("view-list");
+  if (!listView) return;
+  let startX = 0, startY = 0, startT = 0, tracking = false;
+  listView.addEventListener("touchstart", (e) => {
+    if (e.touches.length !== 1) { tracking = false; return; }
+    // ignora gesti che partono da campi di testo, menu o filtri tag
+    if (e.target.closest("input, select, textarea, .tag-filters, .modal")) { tracking = false; return; }
+    const t = e.touches[0];
+    startX = t.clientX; startY = t.clientY; startT = Date.now();
+    tracking = true;
+  }, { passive: true });
+  listView.addEventListener("touchend", (e) => {
+    if (!tracking) return;
+    tracking = false;
+    if (document.body.dataset.view !== "list") return;
+    const t = e.changedTouches[0];
+    const dx = t.clientX - startX, dy = t.clientY - startY;
+    const dt = Date.now() - startT;
+    // swipe verso sinistra deciso, prevalentemente orizzontale, rapido
+    if (dx < -70 && Math.abs(dx) > Math.abs(dy) * 1.8 && dt < 600) {
+      switchView("map");
+    }
+  }, { passive: true });
+})();
 listSearch.addEventListener("input", (e) => { state.searchText = e.target.value; renderList(); });
 
 // Toggle espandi/comprimi tag filtri in cima
